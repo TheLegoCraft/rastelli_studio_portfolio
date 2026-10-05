@@ -1,40 +1,33 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --primary-color: #FF4A1C; /* Orange from design */
+  --secondary-color: #2BD5FF; /* Cyan from design */
+  
+  --grey-100: #F5F5F5;
+  --grey-200: #E0E0E0;
+  --grey-300: #BDBDBD;
+  --grey-400: #9E9E9E;
+  --grey-500: #757575;
+  --grey-600: #616161;
+  --grey-700: #424242;
+  --grey-800: #212121;
+  --grey-900: #121212;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html {
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
   height: 100%;
-}
-
-html,
-body {
-  max-width: 100vw;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-jetbrains-mono), monospace;
   overflow-x: hidden;
-}
-
-body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 a {
@@ -42,8 +35,37 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+/* Base typography utilities */
+.text-primary { color: var(--primary-color); }
+.text-secondary { color: var(--secondary-color); }
+.text-grey { color: var(--grey-400); }
+
+.title-large {
+  font-size: 4rem; /* Will be responsive later */
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.title-small {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.heading-1 {
+  font-size: 2rem;
+}
+
+.heading-2 {
+  font-size: 1.5rem;
+}
+
+.body-main {
+  font-size: 1rem;
+  line-height: 1.5;
 }
