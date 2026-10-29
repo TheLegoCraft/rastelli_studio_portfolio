@@ -181,6 +181,7 @@ function ProjectCard({ project }) {
   return (
     <Link
       href={`/projects/${project.slug}`}
+      className="project-card"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{
@@ -198,8 +199,9 @@ function ProjectCard({ project }) {
         boxShadow: 'none',
       }}
     >
-      {/* Background Image layer with exposure control */}
+      {/* Background Image layer with exposure control (0.2 default, 1.1 on hover) */}
       <div
+        className="project-card-bg"
         style={{
           position: 'absolute',
           inset: 0,
@@ -207,13 +209,12 @@ function ProjectCard({ project }) {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           zIndex: 1,
-          filter: isHovered ? 'brightness(1.35) contrast(1.05)' : 'brightness(0.9)',
-          transform: isHovered ? 'scale(1.02)' : 'scale(1)',
-          transition: 'filter 0.25s ease, transform 0.3s ease',
+          filter: isHovered ? 'brightness(1.1)' : 'brightness(0.2)',
+          transition: 'filter 0.3s ease',
         }}
       />
 
-      {/* Project Title */}
+      {/* Project Title (pure white, no stroke or shadow) */}
       <div
         style={{
           position: 'relative',
@@ -236,6 +237,7 @@ function ProjectCard({ project }) {
             lineHeight: 1.35,
             letterSpacing: '0.02em',
             textShadow: 'none',
+            WebkitTextStroke: 'none',
             margin: 0,
             wordBreak: 'break-word',
           }}
@@ -279,6 +281,22 @@ export default function WorkPage() {
         zIndex: 10,
       }}
     >
+      {/* CSS rules for card hover exposure and border elimination */}
+      <style>{`
+        .project-card {
+          border: none !important;
+          box-shadow: none !important;
+          outline: none !important;
+        }
+        .project-card .project-card-bg {
+          filter: brightness(0.2);
+          transition: filter 0.3s ease;
+        }
+        .project-card:hover .project-card-bg {
+          filter: brightness(1.1) !important;
+        }
+      `}</style>
+
       {/* Title */}
       <div style={{ marginBottom: '1.75rem' }}>
         <h1
