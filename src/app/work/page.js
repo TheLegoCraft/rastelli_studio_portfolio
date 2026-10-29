@@ -3,47 +3,260 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
-// Mock data based on the screenshot
+// All projects strictly matching the portfolio work screenshot
 const projectsData = [
-  { year: 2026, title: "Master's Thesis", category: "RESEARCH" },
-  { year: 2026, title: "ERO", category: "UI/UX" },
-  { year: 2026, title: "Notpla Business Strategy", category: "BUSINESS" },
-  { year: 2026, title: "ZOE Sustainable Strategy", category: "BUSINESS" },
-  { year: 2026, title: "Designing and building the Portfolio", category: "UI/UX" },
-  { year: 2026, title: "Photography & Hobbies", category: "OTHER" },
-  { year: 2025, title: "TeamViewer", category: "UI/UX" },
-  { year: 2025, title: "ERO", category: "UI/UX" },
-  { year: 2025, title: "Master's Thesis", category: "RESEARCH" },
-  { year: 2025, title: "SIoT", category: "RESEARCH" },
-  { year: 2025, title: "AIDE", category: "UI/UX" },
-  { year: 2025, title: "Cascados", category: "UI/UX" },
-  { year: 2025, title: "Hydron", category: "CAD" },
-  { year: 2025, title: "Wirecast", category: "CAD" },
-  { year: 2025, title: "Photography & Hobbies", category: "OTHER" },
-  { year: 2024, title: "AIDE", category: "UI/UX" },
-  { year: 2024, title: "Cuttleswish", category: "RESEARCH" },
-  { year: 2024, title: "Optimisation", category: "SIMULATION" },
-  { year: 2024, title: "Photography & Hobbies", category: "OTHER" },
-  { year: 2023, title: "FEA - HIP IMPLANT", category: "SIMULATION" },
-  { year: 2023, title: "MYCOEDGE", category: "CAD" },
-  { year: 2023, title: "HCDE", category: "UI/UX" },
-  { year: 2022, title: "A-LEVEL NEA", category: "CAD" },
-  { year: 2022, title: "WALKER", category: "CAD" },
-  { year: 2020, title: "NASA & VESUVIUS", category: "CAD" },
-  { year: 2020, title: "GCSE NEA", category: "CAD" },
+  // --- 2026 ---
+  {
+    year: 2026,
+    title: "Master's Thesis",
+    slug: "masters-thesis",
+    categories: ["CAD", "DESIGN", "PROTOTYPING", "DATA ANALYSIS"],
+    image: "/project_icons/masters-thesis.png",
+  },
+  {
+    year: 2026,
+    title: "Hibearnate",
+    slug: "hibearnate",
+    categories: ["DESIGN", "PROGRAMMING", "DATA ANALYSIS", "PROTOTYPING"],
+    image: "/project_icons/hibearnate.png",
+  },
+  {
+    year: 2026,
+    title: "Notpla Business Strategy",
+    slug: "notpla-business-strategy",
+    categories: ["DESIGN", "DATA ANALYSIS", "OTHER"],
+    image: "/project_icons/notpla-business-strategy.png",
+  },
+  {
+    year: 2026,
+    title: "Designing and building the Portfolio",
+    slug: "designing-and-building-the-portfolio",
+    categories: ["DESIGN", "PROGRAMMING", "OTHER"],
+    image: "/project_icons/designing-and-building-the-portfolio.png",
+  },
+  {
+    year: 2026,
+    title: "Cycling Iceland and Trans-european",
+    slug: "cycling-iceland-and-trans-european",
+    categories: ["OTHER"],
+    image: "/project_icons/cycling-iceland-and-trans-european.png",
+  },
+  {
+    year: 2026,
+    title: "Photography & Hobbies",
+    slug: "photography-and-hobbies",
+    categories: ["DESIGN", "OTHER"],
+    image: "/project_icons/photography-and-hobbies.png",
+  },
+
+  // --- 2025 ---
+  {
+    year: 2025,
+    title: "TeamViewer",
+    slug: "teamviewer",
+    categories: ["DESIGN", "DATA ANALYSIS", "PROGRAMMING"],
+    image: "/project_icons/teamviewer.png",
+  },
+  {
+    year: 2025,
+    title: "Cascados",
+    slug: "cascados",
+    categories: ["CAD", "DESIGN", "PROTOTYPING"],
+    image: "/project_icons/cascados.png",
+  },
+  {
+    year: 2025,
+    title: "Hydron",
+    slug: "hydron",
+    categories: ["CAD", "SIMULATION", "DESIGN"],
+    image: "/project_icons/hydron.png",
+  },
+  {
+    year: 2025,
+    title: "Wirecast",
+    slug: "wirecast",
+    categories: ["DESIGN", "PROGRAMMING", "DATA ANALYSIS"],
+    image: "/project_icons/wirecast.png",
+  },
+  {
+    year: 2025,
+    title: "Sensing and IoT",
+    slug: "sensing-and-iot",
+    categories: ["PROGRAMMING", "PROTOTYPING", "DATA ANALYSIS"],
+    image: "/project_icons/sensing-and-iot.png",
+  },
+
+  // --- 2024 ---
+  {
+    year: 2024,
+    title: "Apollo Drones",
+    slug: "apollo-drones",
+    categories: ["CAD", "SIMULATION", "PROTOTYPING"],
+    image: "/project_icons/apollo-drones.png",
+  },
+  {
+    year: 2024,
+    title: "Cuttleswish",
+    slug: "cuttleswish",
+    categories: ["CAD", "PROTOTYPING", "DESIGN"],
+    image: "/project_icons/cuttleswish.png",
+  },
+  {
+    year: 2024,
+    title: "Aerodynamics of a Motorbike",
+    slug: "aerodynamics-of-a-motorbike",
+    categories: ["SIMULATION", "CAD", "DATA ANALYSIS"],
+    image: "/project_icons/aerodynamics-of-a-motorbike.png",
+  },
+
+  // --- 2023 ---
+  {
+    year: 2023,
+    title: "FEA of a Hip Implant",
+    slug: "fea-of-a-hip-implant",
+    categories: ["SIMULATION", "CAD", "DATA ANALYSIS"],
+    image: "/project_icons/fea-of-a-hip-implant.png",
+  },
+  {
+    year: 2023,
+    title: "MycoEdge",
+    slug: "mycoedge",
+    categories: ["CAD", "DESIGN", "PROTOTYPING"],
+    image: "/project_icons/mycoedge.png",
+  },
+  {
+    year: 2023,
+    title: "Sentire",
+    slug: "sentire",
+    categories: ["DESIGN", "PROGRAMMING", "DATA ANALYSIS"],
+    image: "/project_icons/sentire.png",
+  },
+
+  // --- 2022 ---
+  {
+    year: 2022,
+    title: "A-level NEA",
+    slug: "a-level-nea",
+    categories: ["CAD", "DESIGN", "PROTOTYPING"],
+    image: "/project_icons/a-level-nea.png",
+  },
+  {
+    year: 2022,
+    title: "Walker",
+    slug: "walker",
+    categories: ["CAD", "PROTOTYPING", "PROGRAMMING"],
+    image: "/project_icons/walker.png",
+  },
+
+  // --- 2020 ---
+  {
+    year: 2020,
+    title: "GCSE NEA",
+    slug: "gcse-nea",
+    categories: ["PROTOTYPING", "PROGRAMMING"],
+    image: "/project_icons/gcse-nea.png",
+  },
+  {
+    year: 2020,
+    title: "NASA Vesuvius Challenge",
+    slug: "nasa-vesuvius-challenge",
+    categories: ["CAD", "SIMULATION", "PROTOTYPING"],
+    image: "/project_icons/nasa-vesuvius-challenge.png",
+  },
 ];
 
-const filters = ["UI/UX", "CAD", "RESEARCH", "BUSINESS", "SIMULATION"];
+const filterCategories = [
+  "CAD",
+  "DESIGN",
+  "SIMULATION",
+  "PROGRAMMING",
+  "DATA ANALYSIS",
+  "PROTOTYPING",
+  "OTHER"
+];
+
+function ProjectCard({ project }) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <Link
+      href={`/projects/${project.slug}`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      style={{
+        aspectRatio: '1 / 1',
+        backgroundColor: '#0a0a0a',
+        position: 'relative',
+        overflow: 'hidden',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        textDecoration: 'none',
+        borderRadius: '0px',
+        border: 'none',
+        outline: 'none',
+        boxShadow: 'none',
+      }}
+    >
+      {/* Background Image layer with exposure control */}
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          backgroundImage: project.image ? `url(${project.image})` : 'none',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          zIndex: 1,
+          filter: isHovered ? 'brightness(1.35) contrast(1.05)' : 'brightness(0.9)',
+          transform: isHovered ? 'scale(1.02)' : 'scale(1)',
+          transition: 'filter 0.25s ease, transform 0.3s ease',
+        }}
+      />
+
+      {/* Project Title */}
+      <div
+        style={{
+          position: 'relative',
+          zIndex: 3,
+          padding: '1.25rem',
+          textAlign: 'center',
+          width: '100%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          pointerEvents: 'none',
+        }}
+      >
+        <h3
+          style={{
+            color: '#ffffff',
+            fontFamily: 'var(--font-jetbrains-mono), monospace',
+            fontSize: 'clamp(0.95rem, 1.35vw, 1.22rem)',
+            fontWeight: 500,
+            lineHeight: 1.35,
+            letterSpacing: '0.02em',
+            textShadow: 'none',
+            margin: 0,
+            wordBreak: 'break-word',
+          }}
+        >
+          {project.title}
+        </h3>
+      </div>
+    </Link>
+  );
+}
 
 export default function WorkPage() {
   const [activeFilter, setActiveFilter] = useState(null);
 
-  const toggleFilter = (filter) => {
-    setActiveFilter(activeFilter === filter ? null : filter);
+  const toggleFilter = (category) => {
+    setActiveFilter(prev => (prev === category ? null : category));
   };
 
-  const filteredProjects = activeFilter 
-    ? projectsData.filter(p => p.category === activeFilter)
+  // Filter projects by selected category (or show all if none selected)
+  const filteredProjects = activeFilter
+    ? projectsData.filter(p => p.categories.includes(activeFilter))
     : projectsData;
 
   // Group by year
@@ -56,73 +269,119 @@ export default function WorkPage() {
   const years = Object.keys(groupedProjects).sort((a, b) => b - a);
 
   return (
-    <main style={{ minHeight: '100vh', padding: '100px 5%', maxWidth: '1200px', margin: '0 auto', position: 'relative', zIndex: 10 }}>
-      <h1 className="title-large text-primary" style={{ marginBottom: '2rem' }}>WORK (02)</h1>
-      
-      {/* Filters */}
-      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '3rem' }}>
-        {filters.map(f => (
-          <button 
-            key={f}
-            onClick={() => toggleFilter(f)}
-            style={{
-              padding: '5px 15px',
-              backgroundColor: activeFilter === f ? 'var(--primary-color)' : '#e0e0e0',
-              color: activeFilter === f ? 'var(--bg-color)' : 'var(--primary-color)',
-              border: 'none',
-              cursor: 'pointer',
-              fontWeight: 'bold',
-              transition: 'all 0.3s'
-            }}
-          >
-            {f}
-          </button>
-        ))}
+    <main
+      style={{
+        minHeight: '100vh',
+        padding: '100px 5% 120px 5%',
+        maxWidth: '1240px',
+        margin: '0 auto',
+        position: 'relative',
+        zIndex: 10,
+      }}
+    >
+      {/* Title */}
+      <div style={{ marginBottom: '1.75rem' }}>
+        <h1
+          style={{
+            color: 'var(--primary-color)',
+            fontFamily: 'var(--font-jetbrains-mono), monospace',
+            fontSize: 'clamp(2.5rem, 5vw, 3.8rem)',
+            fontWeight: 700,
+            letterSpacing: '0.04em',
+            textTransform: 'uppercase',
+            margin: 0,
+            lineHeight: 1.1,
+          }}
+        >
+          WORK &nbsp;(02)
+        </h1>
       </div>
 
-      {/* Projects Grid */}
-      {years.map(year => (
-        <section key={year} style={{ marginBottom: '3rem' }}>
-          <h2 className="title-small text-primary" style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.4)', paddingBottom: '0.5rem', marginBottom: '1.5rem' }}>{year}</h2>
-          
-          <div style={{ 
-            display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', 
-            gap: '1.5rem' 
-          }}>
-            {groupedProjects[year].map((project, idx) => (
-              <Link 
-                key={idx} 
-                href={`/projects/${project.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`} 
+      {/* Filter Tags */}
+      <div
+        style={{
+          display: 'flex',
+          gap: '0.6rem',
+          flexWrap: 'wrap',
+          marginBottom: '3rem',
+          maxWidth: '900px',
+        }}
+      >
+        {filterCategories.map(cat => {
+          const isActive = activeFilter === cat;
+          return (
+            <button
+              key={cat}
+              onClick={() => toggleFilter(cat)}
+              style={{
+                padding: '5px 12px',
+                backgroundColor: isActive ? 'var(--primary-color)' : '#FFDACD',
+                color: '#260C03',
+                border: 'none',
+                borderRadius: '1px',
+                cursor: 'pointer',
+                fontFamily: 'var(--font-jetbrains-mono), monospace',
+                fontSize: '0.78rem',
+                fontWeight: 700,
+                letterSpacing: '0.03em',
+                textTransform: 'uppercase',
+                transition: 'all 0.2s ease',
+                boxShadow: isActive ? '0 0 10px rgba(255, 74, 28, 0.5)' : 'none',
+              }}
+            >
+              {cat}
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Projects grouped by Year */}
+      {years.length === 0 ? (
+        <div style={{ padding: '4rem 0', color: 'var(--grey-400)', fontFamily: 'var(--font-jetbrains-mono), monospace' }}>
+          No projects found in this category. Click the active filter button to view all.
+        </div>
+      ) : (
+        years.map(year => {
+          return (
+            <section key={year} style={{ marginBottom: '3.5rem' }}>
+              {/* Year Heading & Divider */}
+              <div
                 style={{
-                  aspectRatio: '1 / 1',
-                  backgroundColor: 'var(--grey-200)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  textDecoration: 'none',
-                  position: 'relative',
-                  overflow: 'hidden',
-                  boxShadow: 'inset 0 0 30px rgba(0,0,0,0.1)'
+                  marginBottom: '1.25rem',
+                  borderBottom: '1px solid #FDD6CD',
+                  paddingBottom: '0.4rem',
                 }}
               >
-                <div style={{
-                  position: 'absolute',
-                  top: 0,
-                  left: 0,
-                  right: 0,
-                  bottom: 0,
-                  background: 'linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(220,220,220,0.3) 100%)',
-                }} />
-                <h3 className="body-main text-primary" style={{ position: 'relative', zIndex: 1, textAlign: 'center', padding: '1rem' }}>
-                  {project.title}
-                </h3>
-              </Link>
-            ))}
-          </div>
-        </section>
-      ))}
+                <h2
+                  style={{
+                    color: 'var(--primary-color)',
+                    fontFamily: 'var(--font-jetbrains-mono), monospace',
+                    fontSize: '1.6rem',
+                    fontWeight: 700,
+                    letterSpacing: '0.03em',
+                    margin: 0,
+                  }}
+                >
+                  {year}
+                </h2>
+              </div>
 
+              {/* 3-Column Square Grid */}
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+                  gap: '1.25rem',
+                }}
+              >
+                {groupedProjects[year].map((project) => (
+                  <ProjectCard key={project.slug} project={project} />
+                ))}
+              </div>
+            </section>
+          );
+        })
+      )}
     </main>
   );
 }

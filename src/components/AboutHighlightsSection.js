@@ -138,7 +138,7 @@ export default function AboutHighlightsSection() {
           </div>
 
           <p className="body-main text-white" style={{ marginBottom: '1.5rem', fontSize: '0.9rem', lineHeight: '1.8' }}>
-            Hi there, I'm <span style={{ fontWeight: 'bold' }}>Francesco</span>. While I may just be a recent graduate from Imperial College London, if you were to ask me what I want to be, I would say:
+            Hi there, I&apos;m <span style={{ fontWeight: 'bold' }}>Francesco</span>. While I may just be a recent graduate from Imperial College London, if you were to ask me what I want to be, I would say:
           </p>
           <p className="body-main text-primary" style={{ marginBottom: '1.5rem', fontSize: '0.9rem', fontWeight: 'bold' }}>
             A designer for the future.

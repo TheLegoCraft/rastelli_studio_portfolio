@@ -41,7 +41,7 @@ export default function WhoAmI() {
       {/* Right Column: Pinned Bio */}
       <div style={{ flex: 1, position: 'sticky', top: '20vh', height: 'fit-content' }}>
         <p className="body-main" style={{ marginBottom: '2rem', maxWidth: '500px' }}>
-          Hi there, I'm <span className="text-primary">Francesco</span>. While I may just be a recent graduate from Imperial College London, if you were to ask me what I want to be, I would say: a designer for the future.
+          Hi there, I&apos;m <span className="text-primary">Francesco</span>. While I may just be a recent graduate from Imperial College London, if you were to ask me what I want to be, I would say: a designer for the future.
         </p>
         <p className="body-main" style={{ maxWidth: '500px' }}>
           Like everybody else, I am driven by <span className="text-primary">passion</span>. Not just passion for design, but passion for cooking, art, sports and a plethora of other things. A passion and hope of a better future which fuels my creativity.

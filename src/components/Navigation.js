@@ -31,7 +31,7 @@ export default function Navigation() {
           transition: 'color 0.3s',
           pointerEvents: 'auto', // Re-enable pointer events for the link
         }}>
-          thingamabobjig
+          franslife
         </Link>
 
         {/* Hamburger Menu Button */}
@@ -43,15 +43,15 @@ export default function Navigation() {
             cursor: 'pointer',
             display: 'flex',
             flexDirection: 'column',
-            gap: '8px',
+            gap: '6px',
             padding: '10px',
             pointerEvents: 'auto', // Re-enable pointer events for the button
           }}
           aria-label="Toggle Navigation"
         >
-          <div style={{ width: '35px', height: '3px', backgroundColor: 'var(--text-color)', transition: '0.4s', transform: isOpen ? 'rotate(45deg) translate(8px, 8px)' : 'none' }} />
-          <div style={{ width: '35px', height: '3px', backgroundColor: 'var(--text-color)', transition: '0.4s', opacity: isOpen ? 0 : 1 }} />
-          <div style={{ width: '35px', height: '3px', backgroundColor: 'var(--text-color)', transition: '0.4s', transform: isOpen ? 'rotate(-45deg) translate(7px, -8px)' : 'none' }} />
+          <div style={{ width: '30px', height: '3px', backgroundColor: 'var(--secondary-color)', transition: '0.3s ease', transform: isOpen ? 'rotate(45deg) translate(6px, 6.5px)' : 'none' }} />
+          <div style={{ width: '30px', height: '3px', backgroundColor: 'var(--secondary-color)', transition: '0.3s ease', opacity: isOpen ? 0 : 1 }} />
+          <div style={{ width: '30px', height: '3px', backgroundColor: 'var(--secondary-color)', transition: '0.3s ease', transform: isOpen ? 'rotate(-45deg) translate(6px, -6.5px)' : 'none' }} />
         </button>
       </header>
 
