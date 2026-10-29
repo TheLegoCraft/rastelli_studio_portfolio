@@ -1,5 +1,7 @@
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import Navigation from "@/components/Navigation";
+import BackgroundVideo from "@/components/BackgroundVideo";
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
@@ -14,7 +16,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={jetbrainsMono.variable}>
-      <body>
+      <body suppressHydrationWarning>
+        <BackgroundVideo />
+        <Navigation />
         {children}
       </body>
     </html>

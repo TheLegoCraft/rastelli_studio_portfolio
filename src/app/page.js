@@ -1,66 +1,37 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import AboutHighlightsSection from "@/components/AboutHighlightsSection";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative', zIndex: 10 }}>
+
+      {/* Hero Section */}
+      <section style={{ height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', position: 'relative', width: '100%' }}>
+        <div style={{ width: '80%', position: 'relative' }}>
+          <h1 className="text-primary" style={{
+            fontWeight: 'bold',
+            textAlign: 'center',
+            fontSize: '8vw',
+            lineHeight: 1,
+            margin: 0,
+            whiteSpace: 'nowrap'
+          }}>
+            DESIGN BUILD TEST
+          </h1>
+
+          <div style={{ position: 'relative', width: '100%', height: '2rem', marginTop: '0.2rem' }}>
+            <p className="heading-2 text-primary" style={{ position: 'absolute', left: 0 }}>Francesco Rastelli</p>
+            <p className="heading-2 text-primary" style={{ position: 'absolute', right: 0 }}>2026 Portfolio</p>
+          </div>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div style={{ position: 'absolute', bottom: '10%', left: '50%', transform: 'translateX(-50%)', textAlign: 'center' }}>
+          <p className="heading-2 text-primary">SCROLL DOWN</p>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Combined About & Highlights Section */}
+      <AboutHighlightsSection />
+
+    </main>
   );
 }
