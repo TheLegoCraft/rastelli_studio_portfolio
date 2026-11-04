@@ -209,7 +209,7 @@ function ProjectCard({ project }) {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           zIndex: 1,
-          filter: isHovered ? 'brightness(1.1)' : 'brightness(0.2)',
+          filter: isHovered ? 'brightness(1.1)' : 'brightness(0.1)',
           transition: 'filter 0.3s ease',
         }}
       />
@@ -275,7 +275,7 @@ export default function WorkPage() {
       style={{
         minHeight: '100vh',
         padding: '100px 5% 120px 5%',
-        maxWidth: '1240px',
+        maxWidth: '1000px',
         margin: '0 auto',
         position: 'relative',
         zIndex: 10,
@@ -289,7 +289,7 @@ export default function WorkPage() {
           outline: none !important;
         }
         .project-card .project-card-bg {
-          filter: brightness(0.2);
+          filter: brightness(0.1);
           transition: filter 0.3s ease;
         }
         .project-card:hover .project-card-bg {
@@ -388,7 +388,7 @@ export default function WorkPage() {
               <div
                 style={{
                   display: 'grid',
-                  gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
                   gap: '1.25rem',
                 }}
               >
