@@ -19,19 +19,25 @@ export default function CVPage() {
 
         <div style={{ marginBottom: '1.5rem' }}>
           <p className="heading-2" style={{ marginBottom: '0.5rem' }}>
-            <span className="text-primary">MEng in Design Engineering</span> @ Imperial College London
+            <span className="text-primary">MEng in Design Engineering</span >
           </p>
-          <p className="body-main text-grey" style={{ marginBottom: '1rem' }}>Expected Graduation / Grade - October 2026 / 1st Class Degree</p>
+          <p className="body-main" style={{ marginBottom: '1rem' }}>Imperial College London - Upper second class honours</p>
         </div>
 
         <div style={{ marginBottom: '1.5rem' }}>
-          <p className="body-main" style={{ marginBottom: '0.5rem' }}>
-            <strong>A-Level @ CVMS</strong> - Product design (A*), Mathematics (A*), Physics (A)
+          <p className="heading-2" style={{ marginBottom: '0.5rem' }}>
+            <span className="text-primary">A-Levels @ CVMS</span >
           </p>
-          <p className="body-main">
-            <strong>GCSE @ CVMS</strong> - 9,9,9,8,8,8,8,7,7,7,7
-          </p>
+          <p className="body-main" style={{ marginBottom: '1rem' }}>Product design (A*), Mathematics (A*), Physics (A)</p>
         </div>
+
+        <div style={{ marginBottom: '1.5rem' }}>
+          <p className="heading-2" style={{ marginBottom: '0.5rem' }}>
+            <span className="text-primary">GCSE @ CVMS</span >
+          </p>
+          <p className="body-main" style={{ marginBottom: '1rem' }}>9,9,9,8,8,8,8,7,7,7,7</p>
+        </div>
+
       </section>
 
       {/* Experience */}
@@ -134,7 +140,7 @@ function ExperienceItem({ role, company, date, bullets }) {
   return (
     <div style={{ marginBottom: '2rem' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '0.5rem', flexWrap: 'wrap', gap: '0.5rem' }}>
-        <p className="heading-2" style={{ fontWeight: 'bold', margin: 0 }}>
+        <p className="heading-2" style={{ margin: 0 }}>
           <span className="text-primary">{role} @ {company}</span>
         </p>
         <p className="body-main text-grey" style={{ margin: 0 }}>{date}</p>

@@ -11,9 +11,20 @@ export const projectsContent = {
       "The frequent flooding in rural Vietnam over the typhoon season regularly ruins the local firewood stores that millions rely on, causing severe energy poverty and dangerous conditions for the victims. To provide a localised humanitarian intervention, this thesis presents the context, design, manufacture, testing, and evaluation of a small-scale, natural-draft, monorator wood-gasifier stove designed to dry and burn wet wood after a flood. Given the constraints of the rural Vietnamese context and the delivery of aid within it, the stove was designed and manufactured to use standard stainless steel sheets and insulation, to operate after submersion, and to be used for cooking and heating. While the testing proved the design was only partially successful, it yielded extremely promising results and lessons that, with further testing of a potential redesign, should be fixable, leading to a real solution ready to be integrated into the remote, rural communities most vulnerable to natural disasters."
     ],
     photobooth: [
-      ["1fr"],
-      ["1fr", "1fr"],
-      ["1fr", "1fr", "1fr"]
+      [
+        { src: "/projects/2026_Masters/TitlePage.png", alt: "Title page", span: "1fr" }
+      ],
+      [
+        { src: "/projects/2026_Masters/Externals.jpeg", alt: "External photos of the stove", span: "1fr", aspectRatio: "1" },
+        { src: "/projects/2026_Masters/Internals.jpeg", alt: "Internal photos of the stove", span: "1fr", aspectRatio: "1" }
+      ],
+      [
+        { src: "/projects/2026_Masters/Running.jpeg", alt: "Stove running", span: "1fr" }
+      ],
+      [
+        { src: "/projects/2026_Masters/GasifierCategorisation.png", alt: "Categorisations of gasifiers", span: "2fr", maxHeight: "279px" },
+        { src: "/projects/2026_Masters/ExplodedView.png", alt: "Exploded view", span: "1fr", maxHeight: "279px" }
+      ]
     ],
     documentation: [
       { name: "Masters_Thesis_Executive_Summary.pdf", link: "#" }
@@ -33,9 +44,24 @@ export const projectsContent = {
       "For the second part, to bring the business and product to life, we worked on everything from setting up a social media presence, to a website, video and publicity making, and obviously working on the actual product. Within the team, I was in charge of the majority of the creative aspects, including the running of the social media and adverts (https://www.instagram.com/hibearnatebybear/), designing the front-end of the website using both Figma and Framer, and running the video-making and editing for reels and the long-form advertisement (see below). I also created 3D models and renders to help potential consumers visualise the product and how it would work."
     ],
     photobooth: [
-      ["1fr"],
-      ["1fr", "1fr"],
-      ["1fr"]
+      [
+        { src: "/projects/2026_Hibearnate/Hibearnate_FINAL.mp4", alt: "Product Video", span: "1fr" }
+      ],
+      [
+        { src: "/projects/2026_Hibearnate/DarkLogo.png", alt: "Hibearnate Logo", span: "1fr", aspectRatio: "1" },
+        { src: "/projects/2026_Hibearnate/HeroShot_On_V1.png", alt: "Render of the product on a window", span: "1fr", aspectRatio: "1" }
+      ],
+      [
+        { src: "/projects/2026_Hibearnate/Hibearnate - New.png", alt: "Website Screenshot", span: "1fr", objectFit: "scale-down", maxHeight: "3000px" }
+      ],
+      [
+        { src: "/projects/2026_Hibearnate/Light & Noise-1.png", alt: "Advertisement", span: "1fr", objectFit: "scale-down" },
+        { src: "/projects/2026_Hibearnate/Ad_2.png", alt: "Advertisement", span: "1fr" },
+        { src: "/projects/2026_Hibearnate/Sleep like a bear 1.png", alt: "Advertisement", span: "1fr" }
+      ],
+      [
+        { src: "/projects/2026_Hibearnate/WhyUs.mp4", alt: "Product Video", span: "1fr" }
+      ]
     ],
     documentation: [
       { name: "07_12_25_Pitch_Deck.pdf", link: "/projects/2026_Hibearnate/07_12_25_Pitch_Deck.pdf" },
@@ -44,7 +70,7 @@ export const projectsContent = {
   },
 
   "notpla-business-strategy": {
-    title: "Notpla's Strategy",
+    title: "Notpla's Buisness Strategy",
     date: "Jan 2026 - Mar 2026",
     year: 2026,
     tags: ["MICROSOFT SUITE", "USER RESEARCH", "TEAM PROJECT", "BUISNESS STRATEGY"],
@@ -56,8 +82,13 @@ export const projectsContent = {
       "The key action that should be taken should be focusing on the US fast-food industry, with a focus on replacing just 1% of the 30.9M tons produced each year. This could be done by targeting both the health benefits of removing microplastics from food, and through partnerships with large corporations like NextGen Consortium. Another important action to facilitate this would be vertical integration, building regional processing plants in the US Northeast where high-yield algae sources are found."
     ],
     photobooth: [
-      ["1fr"],
-      ["1fr", "1fr"]
+      [
+        { src: "/projects/2026_Notpla/Cover.png", alt: "Cover page", span: "1fr" }
+      ],
+      [
+        { src: "/projects/2026_Notpla/Seaweed-Notpla.jpg", alt: "Notpla's seaweed", span: "1fr" },
+        { src: "/projects/2026_Notpla/food.jpeg", alt: "Notpla packaging", span: "1fr" }
+      ]
     ],
     documentation: [
       { name: "16_03_25_Notpla.pdf", link: "/projects/2026_Notpla/16_03_25_Notpla.pdf" }
@@ -93,15 +124,31 @@ export const projectsContent = {
       "Both were amazing experiences, offering both a mix of stunning views, challenging landscapes, rough roads, and amazing people. Crossing the Icelandic highlands proved to be one of the hardest things i’ve ever done, battling days of rain cycling across volcanic ash, fording glacial rivers and constantly fighting the wind; however, the struggle made the views even more worth it. While Europe was much easier, it was still introspective in it’s own way (having cycled from Trieste to Berlin passing by Ljubljana, Vienna, Brno and Wroclaw) offering such a wide and interesting variety of cultures and food that will stay with me for the rest of my life."
     ],
     photobooth: [
-      ["1fr"],
-      ["1fr", "1fr"],
-      ["1fr"]
+      [
+        { src: "/projects/2026_Cycling/image_1.jpeg", alt: "Image 1", span: "1fr", aspectRatio: "3/2" }
+      ],
+      [
+        { src: "/projects/2026_Cycling/image_2.jpeg", alt: "Image 2", span: "1fr", aspectRatio: "1" },
+        { src: "/projects/2026_Cycling/image_3.jpeg", alt: "Image 3", span: "2fr", aspectRatio: "3/2" }
+      ],
+      [
+        { src: "/projects/2026_Cycling/image_4.jpeg", alt: "Image 4", span: "2fr", aspectRatio: "3/2" },
+        { src: "/projects/2026_Cycling/image_5.jpeg", alt: "Image 5", span: "1fr", aspectRatio: "1" }
+      ],
+      [
+        { src: "/projects/2026_Cycling/image_6.jpeg", alt: "Image 6", span: "1fr", aspectRatio: "3/2" }
+      ],
+      [
+        { src: "/projects/2026_Cycling/image_7.jpeg", alt: "Image 7", span: "1fr" },
+        { src: "/projects/2026_Cycling/image_8.jpeg", alt: "Image 8", span: "1fr" },
+        { src: "/projects/2026_Cycling/image_9.jpeg", alt: "Image 9", span: "1fr" }
+      ]
     ],
     documentation: []
   },
 
   "photography-and-hobbies": {
-    title: "PERSONAL WORK",
+    title: "PHOTOGRAPHY AND HOBBIES",
     date: "Ongoing",
     year: 2026,
     tags: [],
@@ -111,10 +158,31 @@ export const projectsContent = {
       "My personal work involves a variety of things, ranging from film photography, to my love for waterpolo, and even a large interest in cooking. Below are some pictures of my personal work and hobbies which show a less professional side of me."
     ],
     photobooth: [
-      ["1fr"],
-      ["1fr", "1fr"],
-      ["1fr", "1fr", "1fr"],
-      ["1fr"]
+      [
+        { src: "/projects/Ongoing_PersonalWork/image_1.JPG", alt: "Image 1", span: "1fr", aspectRatio: "3/2" }
+      ],
+      [
+        { src: "/projects/Ongoing_PersonalWork/image_2.JPG", alt: "Image 2", span: "1fr", aspectRatio: "1" },
+        { src: "/projects/Ongoing_PersonalWork/image_3.JPG", alt: "Image 3", span: "2fr", aspectRatio: "3/2" }
+      ],
+      [
+        { src: "/projects/Ongoing_PersonalWork/image_4.JPG", alt: "Image 4", span: "2fr", aspectRatio: "3/2" },
+        { src: "/projects/Ongoing_PersonalWork/image_5.JPG", alt: "Image 5", span: "1fr", aspectRatio: "1" }
+      ],
+      [
+        { src: "/projects/Ongoing_PersonalWork/image_6.jpg", alt: "Image 6", span: "1fr", aspectRatio: "3/2" }
+      ],
+      [
+        { src: "/projects/Ongoing_PersonalWork/image_7.jpeg", alt: "Image 7", span: "1fr", aspectRatio: "3/2" }
+      ],
+      [
+        { src: "/projects/Ongoing_PersonalWork/image_8.jpeg", alt: "Image 8", span: "1fr" },
+        { src: "/projects/Ongoing_PersonalWork/image_9.jpeg", alt: "Image 9", span: "1fr" },
+        { src: "/projects/Ongoing_PersonalWork/image_10.jpeg", alt: "Image 10", span: "1fr" }
+      ],
+      [
+        { src: "/projects/Ongoing_PersonalWork/image_11.jpeg", alt: "Image 11", span: "1fr", aspectRatio: "3/2" },
+      ],
     ],
     documentation: []
   },
@@ -134,8 +202,13 @@ export const projectsContent = {
       "2 letters of recommendation are available from both the UXR Team Lead and the Director of Design, which can be provided on request."
     ],
     photobooth: [
-      ["1fr"],
-      ["1fr", "1fr"]
+      [
+        { src: "/projects/2025_TeamViewer/TV_Image.jpeg", alt: "Image of the UXR Team", span: "1fr" }
+      ],
+      [
+        { src: "/projects/2025_TeamViewer/hero-dex-device-monitoring-tracking-overview.avif", alt: "Overview of the DEX dashboard", span: "1fr" },
+        { src: "/projects/2025_TeamViewer/hero-dex-device-monitoring-tracking-overview.avif", alt: "Overview of the DEX dashboard", span: "1fr" }
+      ]
     ],
     documentation: [
       { name: "2 letters of recommendation are available from both the UXR Team Lead and the Director of Design, which can be provided on request.", link: "/contact" }
@@ -155,9 +228,16 @@ export const projectsContent = {
       "The final design could be installed on any wall and integrated into the existing piping system easily, allowing for each household to have their own integrated system. This would avoid using the leaky pipe systems found outside homes which often leech additional arsenic and pollutants into the water supply."
     ],
     photobooth: [
-      ["1fr"],
-      ["1fr", "1fr"],
-      ["1fr"]
+      [
+        { src: "/projects/2025_Cascados/Cover page - Juyeong.png", alt: "Cover page", span: "1fr" }
+      ],
+      [
+        { src: "/projects/2025_Cascados/Group12-FullVideo.mp4", alt: "Product video", span: "1fr" }
+      ],
+      [
+        { src: "/projects/2025_Cascados/Full_Render.png", alt: "Render of the product", span: "1fr" },
+        { src: "/projects/2025_Cascados/SlicedSystem.png", alt: "Sliced view of the product", span: "1fr" }
+      ]
     ],
     documentation: [
       { name: "25_11_24_Cascados_Stage_1.pdf", link: "public/projects/2025_Cascados/25_11_24_Cascados_Stage_1.pdf" },
@@ -178,8 +258,16 @@ export const projectsContent = {
       "Through the standard design journey, I experimented with new softwares, such as Rhino 3D, and with new modelling techniques to create voronoi meshes, and fluid dynamics to create effects. I used this project as a way to push the boundaries of what I was capable in CAD, especially focusing on improving my Blender skill-set."
     ],
     photobooth: [
-      ["1fr"],
-      ["1fr", "1fr"]
+      [
+        { src: "/projects/2025_Hydron/Cover.png", alt: "Cover page", span: "1fr" }
+      ],
+      [
+        { src: "/projects/2025_Hydron/Collision_1.3.png", alt: "Render of the ball colliding", span: "1fr" },
+        { src: "/projects/2025_Hydron/Pool.png", alt: "Render of a dummy in the pool", span: "2fr" }
+      ],
+      [
+        { src: "/projects/2025_Hydron/Group3.png", alt: "Sketches of the concept", span: "1fr" }
+      ]
     ],
     documentation: [
       { name: "19_03_25_Hydron.pdf", link: "/projects/2025_Hydron/19_03_25_Hydron.pdf" }
@@ -198,8 +286,17 @@ export const projectsContent = {
       "Development of the app began with a site-map to understand how users would use, and in which order information would be displayed. Balsamiq was then used to create interactive mocks of the application to be brought forwards for user testing allowing for issues regarding workflow, gaps and clarity to be discovered. This allowed me to go onto Figma development to create an MVP application which included a Splice 3D model, using ReactJS, which would allow users to interact with a 3D model of their house and the position of the plugs around it (Try out the model below!). A final SUS test on the product determined how good of a result it was and if any glaring issues were found by potential users."
     ],
     photobooth: [
-      ["1fr"],
-      ["1fr", "1fr"]
+      [
+        { src: "/projects/2025_Wirecast/FigmaScreenshot.png", alt: "Figma Screenshot showcasing the project", span: "1fr" }
+      ],
+      [
+        { src: "/projects/2025_Wirecast/Bluetooth.png", alt: "Connecting Bluetooth", span: "1fr", aspectRatio: "0.5" },
+        { src: "/projects/2025_Wirecast/New Custom Control.png", alt: "Custom Control Options", span: "1fr", aspectRatio: "0.5" },
+        { src: "/projects/2025_Wirecast/Day.png", alt: "Day view", span: "1fr", aspectRatio: "0.5" }
+      ],
+      [
+        { src: "/projects/2025_Wirecast/Plug Video.mp4", alt: "Wirecast Plug 3D model interaction", span: "1fr" }
+      ]
     ],
     documentation: [
       { name: "16_03_25_Wirecast.pdf", link: "/projects/2025_Wirecast/16_03_25_Wirecast.pdf" }
@@ -207,7 +304,7 @@ export const projectsContent = {
   },
 
   "sensing-and-iot": {
-    title: "INTRUDER ALARM",
+    title: "WORLD'S WORST INTRUDER ALARM",
     date: "Oct 2025 - Dec 2025",
     year: 2025,
     tags: ["FIGMA", "PYTHON", "MATLAB", "MICROSOFT SUITE", "MANUFACTURE", "ELECTRONICS"],
@@ -243,8 +340,17 @@ export const projectsContent = {
       "Within the team, I first ran extensive user research, contacting 133 different stakeholders, including 40 different SaR teams within the UK, to gain valuable insights into what issues they face. This allowed me to adapt the design of the drone to target key issues; for example, the drone focused around being easily repairable, especially with the high likelihood of a crash when the drone is flown in bad weather, or the inclusion of a roll cage to protect key components and the ability for all parts to be fixed with off the shelf components. I also developed the UI for the ML algorithm and drone interface to be as easy for a user to interact with. I then collaborated with the rest of the team to develop system diagram, business models and both Top Down and Bottom up analysis for both SaR and Military rescue applications.  "
     ],
     photobooth: [
-      ["1fr"],
-      ["1fr", "1fr"]
+      [
+        { src: "/projects/2024_Apollo_Drones/SnowSpotlight.png", alt: "Render of the drone in snowy conditions", span: "1fr" }
+      ],
+      [
+        { src: "/projects/2024_Apollo_Drones/Group 125.png", alt: "Logo", span: "1fr", aspectRatio: "1.08" },
+        { src: "/projects/2024_Apollo_Drones/Pogo.png", alt: "Pogo pins render", span: "1fr", aspectRatio: "1.08" },
+        { src: "/projects/2024_Apollo_Drones/BottomBlurred.png", alt: "Render of the bottom of the drone", span: "1fr", aspectRatio: "1.08" }
+      ],
+      [
+        { src: "/projects/2024_Apollo_Drones/UI.png", alt: "UI of the drone controller", span: "1fr" }
+      ]
     ],
     documentation: [
       { name: "14_12_24_ApolloDrones.pdf", link: "/projects/2024_Apollo_Drones/14_12_24_ApolloDrones.pdf" },
@@ -264,9 +370,19 @@ export const projectsContent = {
       "Like any large project, issues arose during it. Outside of having a team-mate drop out early in the project, within the design we faced mechanical issues as the support legs would bend unevenly, however this was fixed with a decant mechanism. Securely attaching the pot also required a lot of iteration, with a fine balance between arm bend and grip being achieved by ony having the ends be made out of TPU. Another major issue was electronics, as the lack of a custom PCB meant that we were forced to cram a large quantity of components inefficiently inside the shell, resulting in shorts and wires de-soldering."
     ],
     photobooth: [
-      ["1fr"],
-      ["1fr", "1fr"],
-      ["1fr"]
+      [
+        { src: "/projects/2024_IDE/BuiltProduct.png", alt: "Fully assembled product", span: "1fr" }
+      ],
+      [
+        { src: "/projects/2024_IDE/Electronics.png", alt: "Electronics", span: "1fr" },
+        { src: "/projects/2024_IDE/ExplodedCyclesV2.png", alt: "Exploded View", span: "2fr" }
+      ],
+      [
+        { src: "/projects/2024_IDE/Cuttleswish-Video.mp4", alt: "Video of the product", span: "1fr" }
+      ],
+      [
+        { src: "/projects/2024_IDE/Final Render_2.png", alt: "Render of the product", span: "1fr" }
+      ]
     ],
     documentation: [
       { name: "18_03_24_IDE_1.pdf", link: "/projects/2024_IDE/18_03_24_IDE_1.pdf" },
@@ -287,9 +403,13 @@ export const projectsContent = {
       "Unlike those who designed a car, I also had to take into account the driver into my simulation, so I learnt how mannequins worked in Blender to be able to model the correct orientation and flow of a person. This turned out to be much more difficult than imagined, as Solidworks would not accept the geometry without me doing some “wizard-y” in onshape to re-create the body as a solid object."
     ],
     photobooth: [
-      ["1fr"],
-      ["1fr", "1fr"],
-      ["1fr"]
+      [
+        { src: "/projects/2024_AERO/RenderCoverPage.png", alt: "Motorbike Cover Page", span: "1fr" }
+      ],
+      [
+        { src: "/projects/2024_AERO/2D Velocity Plot.png", alt: "Motorbike 2D Velocity Plot", span: "1fr" },
+        { src: "/projects/2024_AERO/FlowArrows.png", alt: "Motorbike Flow Arrows", span: "2fr" }
+      ],
     ],
     documentation: [
       { name: "20_02_24_Aerodynamics.pdf", link: "/projects/2024_AERO/20_02_24_Aerodynamics.pdf" }
@@ -298,7 +418,7 @@ export const projectsContent = {
 
   // --- 2023 ---
   "fea-of-a-hip-implant": {
-    title: "FEA OF IMPLANT",
+    title: "FEA OF A HIP IMPLANT",
     date: "Jan 2023 - Apr 2023",
     year: 2023,
     tags: ["ONSHAPE", "BLENDER", "ANSYS"],
@@ -344,9 +464,9 @@ export const projectsContent = {
         { src: "/projects/2023_MycoEdge/RenderedWithBackground.png", alt: "MycoEdge Razor in Bathroom Setting", span: "1fr" }
       ],
       [
-        { src: "/projects/2023_MycoEdge/Mechanism.png", alt: "Internal Lever Mechanism", span: "1fr" },
-        { src: "/projects/2023_MycoEdge/RazorSharpeningRenderV2.png", alt: "Razor Sharpening Action Render", span: "1fr" },
-        { src: "/projects/2023_MycoEdge/RazorRender.png", alt: "MycoEdge Upright Razor Render", span: "1fr" }
+        { src: "/projects/2023_MycoEdge/Mechanism.png", alt: "Internal Lever Mechanism", span: "1fr", aspectRatio: "3 / 4" },
+        { src: "/projects/2023_MycoEdge/RazorSharpeningRenderV2.png", alt: "Razor Sharpening Action Render", span: "1fr", aspectRatio: "3 / 4" },
+        { src: "/projects/2023_MycoEdge/RazorRender.png", alt: "MycoEdge Upright Razor Render", span: "1fr", aspectRatio: "3 / 4" }
       ],
       [
         { src: "/projects/2023_MycoEdge/Gilette.jpg", alt: "Sustainable Design Gillette Fusion 5 Razor Analysis", span: "1fr" }
@@ -373,16 +493,16 @@ export const projectsContent = {
     ],
     photobooth: [
       [
-        { src: "/projects/2023_HCDE/Sentire.png", alt: "Sentire Mobile App Interface Mockups", span: "1fr", maxHeight: "650px" }
+        { src: "/projects/2023_HCDE/HCDE_SentireApp.png", alt: "Sentire Mobile App Interface Mockups", span: "1fr", maxHeight: "650px" }
       ],
       [
-        { src: "/projects/2023_HCDE/IMG_5190.jpg", alt: "Canal Trash Observation", span: "1fr", aspectRatio: "3 / 4" },
-        { src: "/projects/2023_HCDE/IMG_5209.jpg", alt: "Canal Maintenance Boat Hopper", span: "1fr", aspectRatio: "3 / 4" },
-        { src: "/projects/2023_HCDE/IMG_5265.JPG", alt: "Volunteering on the Canal", span: "1fr", aspectRatio: "3 / 4" }
+        { src: "/projects/2023_HCDE/IMG_5190.jpg", alt: "Canal trash observation", span: "1fr", aspectRatio: "3 / 4" },
+        { src: "/projects/2023_HCDE/IMG_5209.jpg", alt: "Canal & River Trust trash boat", span: "1fr", aspectRatio: "3 / 4" },
+        { src: "/projects/2023_HCDE/IMG_5265.JPG", alt: "Volunteering with the Canal & River Trust", span: "1fr", aspectRatio: "3 / 4" }
       ],
       [
-        { src: "/projects/2023_HCDE/HCDE_App_Idea.png", alt: "HCDE App Flow and Wireframe", span: "1fr" },
-        { src: "/projects/2023_HCDE/Screenshot 2023-05-16 at 21.14.48.png", alt: "Canal and River Trust Rewards System Wireframe", span: "1fr" }
+        { src: "/projects/2023_HCDE/HCDE_AppSketches.png", alt: "HCDE App Flow and Wireframe", span: "1fr" },
+        { src: "/projects/2023_HCDE/HCDE_Balsamiq.png", alt: "Canal and River Trust Rewards System Wireframe", span: "1fr" }
       ]
     ],
     documentation: [
@@ -406,10 +526,22 @@ export const projectsContent = {
       "The physical prototype validated the ergonomic and functional principles of portable drafting surfaces."
     ],
     photobooth: [
-      ["1fr"],
-      ["1fr", "2fr"],
-      ["2fr", "1fr"],
-      ["1fr", "1fr", "1fr"]
+      [
+        { src: "/projects/2022_ALevel_NEA/NEA_DeskPic.png", alt: "Render of the product on a desk", span: "1fr" }
+      ],
+      [
+        { src: "/projects/2022_ALevel_NEA/NEA_ClosedProduct.png", alt: "CAD of the product closed", span: "2fr" },
+        { src: "/projects/2022_ALevel_NEA/NEA_PenHolder.png", alt: "CAD of the pen holder", span: "1fr" }
+      ],
+      [
+        { src: "/projects/2022_ALevel_NEA/NEA_ClientResearch.png", alt: "Client research page from the report", span: "1fr" },
+        { src: "/projects/2022_ALevel_NEA/NEA_OpenWithRuler.png", alt: "CAD of the product open", span: "1fr" }
+      ],
+      [
+        { src: "/projects/2022_ALevel_NEA/NEA_MechanismCAM.jpg", alt: "Drawing of the CAM Mechanism", span: "1fr" },
+        { src: "/projects/2022_ALevel_NEA/NEA_AccessoriesLayout.jpg", alt: "Drawing of the accessories layout", span: "1fr" },
+        { src: "/projects/2022_ALevel_NEA/NEA_MechanismFinal.jpg", alt: "Drawing of the final mechanism", span: "1fr" }
+      ]
     ],
     documentation: [
       { name: "25-4-22_ProductDesignNEA.pdf", link: "/projects/2022_ALevel_NEA/25-4-22_ProductDesignNEA.pdf" }
@@ -428,8 +560,16 @@ export const projectsContent = {
       "Unfortunately, only some images have survived since the project was first made."
     ],
     photobooth: [
-      ["1fr"],
-      ["1fr", "1fr", "1fr"]
+      [
+        { src: "/projects/2022_Walker/Walker_LegComponents.png", alt: "View of the different leg components", span: "1fr" }
+      ],
+      [
+        { src: "/projects/2022_Walker/Walker_LegZoomed.png", alt: "Zoomed in view of the leg", span: "1fr" },
+        { src: "/projects/2022_Walker/Walker_BodyZoomed.png", alt: "Zoomed in view of the body", span: "2fr" }
+      ],
+      [
+        { src: "/projects/2022_Walker/Walker_BodyVersions.png", alt: "Different versions of the body", span: "1fr" }
+      ],
     ],
     documentation: []
   },
@@ -484,12 +624,11 @@ export const projectsContent = {
         { src: "/projects/2020_NASA_Vesuvius_Challenge/NASA_FullDesign.png", alt: "NASA Venus Rover Sensor Arm Mechanism", span: "1fr" }
       ],
       [
-        { src: "/projects/2020_NASA_Vesuvius_Challenge/Screenshot 4.png", alt: "Gear Differential Close-up", span: "1fr" },
-        { src: "/projects/2020_NASA_Vesuvius_Challenge/Screenshot 6.png", alt: "Rover Body Frame Assembly", span: "2fr" },
-        { src: "/projects/2020_NASA_Vesuvius_Challenge/Screenshot 4.png", alt: "Wheel Mechanism Detail", span: "1fr", objectFit: "cover", objectPosition: "right center" }
+        { src: "/projects/2020_NASA_Vesuvius_Challenge/NASA_Mechanism1.png", alt: "Gear Differential Close-up", span: "1fr" },
+        { src: "/projects/2020_NASA_Vesuvius_Challenge/NASA_Mechanism2.png", alt: "Rover Body Frame Assembly", span: "2fr" },
       ],
       [
-        { src: "/projects/2020_NASA_Vesuvius_Challenge/Screenshot 1.png", alt: "Cylindrical Mesh Lattice with Propeller", span: "1fr" }
+        { src: "/projects/2020_NASA_Vesuvius_Challenge/NASA_Sifter.png", alt: "Cylindrical Mesh Lattice with Propeller", span: "1fr" }
       ]
     ],
     documentation: []

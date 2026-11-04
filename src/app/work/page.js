@@ -303,7 +303,7 @@ export default function WorkPage() {
           style={{
             color: 'var(--primary-color)',
             fontFamily: 'var(--font-jetbrains-mono), monospace',
-            fontSize: 'clamp(2.5rem, 5vw, 3.8rem)',
+            fontSize: 'clamp(2.5rem, 5vw, 4rem)',
             fontWeight: 700,
             letterSpacing: '0.04em',
             textTransform: 'uppercase',
@@ -339,7 +339,7 @@ export default function WorkPage() {
                 borderRadius: '1px',
                 cursor: 'pointer',
                 fontFamily: 'var(--font-jetbrains-mono), monospace',
-                fontSize: '0.78rem',
+                fontSize: '1rem',
                 fontWeight: 700,
                 letterSpacing: '0.03em',
                 textTransform: 'uppercase',
@@ -374,7 +374,7 @@ export default function WorkPage() {
                   style={{
                     color: 'var(--primary-color)',
                     fontFamily: 'var(--font-jetbrains-mono), monospace',
-                    fontSize: '1.6rem',
+                    fontSize: '2.5rem',
                     fontWeight: 700,
                     letterSpacing: '0.03em',
                     margin: 0,

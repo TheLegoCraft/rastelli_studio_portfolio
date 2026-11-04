@@ -91,7 +91,7 @@ export default async function ProjectPage({ params }) {
               padding: '6px 14px',
               borderRadius: '2px',
               fontFamily: 'var(--font-jetbrains-mono), monospace',
-              fontSize: '0.82rem',
+              fontSize: '1rem',
               fontWeight: 700,
               letterSpacing: '0.04em',
               textTransform: 'uppercase',
@@ -215,7 +215,7 @@ export default async function ProjectPage({ params }) {
                               height: '100%',
                               maxHeight: '650px',
                               display: 'block',
-                              borderRadius: '6px',
+                              borderRadius: '10px',
                               backgroundColor: '#000',
                             }}
                           />
@@ -243,9 +243,9 @@ export default async function ProjectPage({ params }) {
                             alt={item.alt || project.title}
                             style={{
                               width: '100%',
-                              height: item.aspectRatio ? '100%' : 'auto',
+                              height: '100%',
                               maxHeight: item.maxHeight || (row.length === 1 ? '750px' : undefined),
-                              objectFit: item.objectFit || (item.aspectRatio ? 'cover' : 'contain'),
+                              objectFit: item.objectFit || 'cover',
                               objectPosition: item.objectPosition || 'center',
                               display: 'block',
                               borderRadius: '6px',
