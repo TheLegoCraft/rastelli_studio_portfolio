@@ -8,7 +8,10 @@ export const projectsContent = {
     categories: ["CAD", "DESIGN", "DATA ANALYSIS", "PROTOTYPING", "OTHER"],
     image: "/project_icons/masters-thesis.png",
     brief: [
-      "The frequent flooding in rural Vietnam over the typhoon season regularly ruins the local firewood stores that millions rely on, causing severe energy poverty and dangerous conditions for the victims. To provide a localised humanitarian intervention, this thesis presents the context, design, manufacture, testing, and evaluation of a small-scale, natural-draft, monorator wood-gasifier stove designed to dry and burn wet wood after a flood. Given the constraints of the rural Vietnamese context and the delivery of aid within it, the stove was designed and manufactured to use standard stainless steel sheets and insulation, to operate after submersion, and to be used for cooking and heating. While the testing proved the design was only partially successful, it yielded extremely promising results and lessons that, with further testing of a potential redesign, should be fixable, leading to a real solution ready to be integrated into the remote, rural communities most vulnerable to natural disasters."
+      "Every typhoon season, floods in rural Vietnam ruin the firewood that millions of people rely on. That leaves them facing severe energy poverty and dangerous conditions.",
+      "For my Master's thesis, I designed, built and tested a response: a small natural-draft, monorator wood-gasifier stove that can dry and burn wet wood after a flood.",
+      "It had to suit rural Vietnam and how aid reaches people there, so it's made from standard stainless steel sheets and insulation, still works after being submerged, and can be used for both cooking and heating.",
+      "It was only partially successful in testing, but the results were extremely promising. With a redesign and more testing, I believe the issues can be fixed, giving the remote communities most vulnerable to natural disasters a real solution."
     ],
     photobooth: [
       [
@@ -40,9 +43,11 @@ export const projectsContent = {
     categories: ["CAD", "DESIGN", "DATA ANALYSIS", "PROTOTYPING", "OTHER"],
     image: "/project_icons/hibearnate.png",
     brief: [
-      "This project can be split into 2 distinct sections: the first part involved a pitch to a group of VCs, while the second part was bringing the product and business actually to life. Beginning with the pitch:",
-      "As a team of 4, we’ve all struggled with the same issue: a bad night’s sleep. Living in London, one of the issues we face is light coming through the windows at night, and a public survey we ran found that 71% of people suffered from the same problem! Our solution was an electrochromic film any user could install by themselves, which by passing electricity through it would go from being completely transparent to blocking up to 97% of light. Having a huge market available to us, we only needed to verify this problem with the public; so, spending £20 to set up a simple set of ads on facebook, creating a website and a waitlist got us the following results: 2,421 views, 68 clicks and 8 sign ups to the waitlist! The pitch to the VCs asked for advice for a kickstarter campaign to get our first MVPs to market, and manufacturing and import expertise to get the product made.",
-      "For the second part, to bring the business and product to life, we worked on everything from setting up a social media presence, to a website, video and publicity making, and obviously working on the actual product. Within the team, I was in charge of the majority of the creative aspects, including the running of the social media and adverts (https://www.instagram.com/hibearnatebybear/), designing the front-end of the website using both Figma and Framer, and running the video-making and editing for reels and the long-form advertisement (see below). I also created 3D models and renders to help potential consumers visualise the product and how it would work."
+      "All 4 of us knew what a bad night's sleep felt like. Living in London, one big cause was light through the windows at night, and 71% of people in our survey had the same problem.",
+      "Our solution was Hibearnate, an electrochromic film you can install yourself. Pass electricity through it, and it goes from completely transparent to blocking up to 97% of light.",
+      "First, we had to prove people wanted it. We spent £20 on Facebook ads, built a website and waitlist, and got 2,421 views, 68 clicks and 8 sign-ups. We then pitched to VCs, asking for advice on a Kickstarter campaign and for manufacturing and import expertise.",
+      "Next came bringing the business and product to life. I led most of the creative side: running our social media and adverts, designing the website front-end in Figma and Framer, leading the video-making and editing for our reels and long-form advert (see below), and creating 3D models and renders to show how it works.",
+      { label: "See Hibearnate on Instagram", href: "https://www.instagram.com/hibearnatebybear/" }
     ],
     photobooth: [
       [
@@ -78,9 +83,10 @@ export const projectsContent = {
     categories: ["DATA ANALYSIS", "OTHER"],
     image: "/project_icons/notpla-business-strategy.png",
     brief: [
-      "Notpla is an existing company which creates an alternative to plastic packaging using sustainable seaweed. The aim of this project was to create a business strategy for them in the form of a late-stage growth funding pitch deck, involving a diagnosis, guiding policy and actions.",
-      "While the company already has a strong opportunity within the market, in the form of material performance, circular economy and eco-compliance, our proposed guiding policy targeted the scalability, innovation and impact to improve the company’s market share from replacing 21.5M single use plastic up to 1B in 2030. Together with expanding Notpla’s strong presence in Europe, the company could also expand to the US and APAC in the long-term. The company could also expand across the value chain both upstream focusing on expanding raw-material processing, or downstream in the form of brand partners, such as with Just Eat.",
-      "The key action that should be taken should be focusing on the US fast-food industry, with a focus on replacing just 1% of the 30.9M tons produced each year. This could be done by targeting both the health benefits of removing microplastics from food, and through partnerships with large corporations like NextGen Consortium. Another important action to facilitate this would be vertical integration, building regional processing plants in the US Northeast where high-yield algae sources are found."
+      "Notpla makes a sustainable alternative to plastic packaging using seaweed. Our task was to create its business strategy as a late-stage growth funding pitch deck, with a diagnosis, guiding policy and actions.",
+      "Notpla already has strengths in material performance, circular economy and eco-compliance. Our guiding policy focused on scalability, innovation and impact, aiming to grow from replacing 21.5M single-use plastics to 1B by 2030.",
+      "That meant building on its presence in Europe, expanding to the US and APAC in the long term, and moving along the value chain: upstream into raw-material processing and downstream through brand partners like Just Eat.",
+      "Our key action was to target the US fast-food industry and replace just 1% of the 30.9M tons produced each year. That would rely on the health benefits of removing microplastics from food, and partnerships with groups like NextGen Consortium. We also proposed regional processing plants in the US Northeast, close to high-yield algae sources."
     ],
     photobooth: [
       [
@@ -92,19 +98,19 @@ export const projectsContent = {
       ]
     ],
     documentation: [
-      { name: "16_03_25_Notpla.pdf", link: "/projects/2026_Notpla/16_03_25_Notpla.pdf" }
+      { name: "16_03_26_Notpla.pdf", link: "/projects/2026_Notpla/16_03_26_Notpla.pdf" }
     ]
   },
 
   "designing-and-building-the-portfolio": {
-    title: "Portfolio",
+    title: "Portfolio Design",
     date: "Ongoing",
     year: 2026,
     tags: ["FIGMA", "ADOBE SUITE", "UI/UX", "PYTHON", "JAVASCRIPT"],
     categories: ["DESIGN", "PROGRAMMING", "OTHER"],
     image: "/project_icons/designing-and-building-the-portfolio.png",
     brief: [
-      "The portfolio has always been an ongoing work in progress. Having been built firstly on Figma to be uploaded as a pdf, then transferred to Adobe portfolios to be in the form of a website, before finally being rebuilt on Figma and integrated into a website using Antigravity and hosting on Github."
+      "This portfolio is always a work in progress. It started as a Figma PDF, became an Adobe Portfolio website, and was then redesigned in Figma and built with Antigravity. Here's how it used to look and how it’s changed over time."
     ],
     photobooth: [
       [
@@ -127,9 +133,10 @@ export const projectsContent = {
     categories: ["DESIGN", "DATA ANALYSIS", "OTHER"],
     image: "/project_icons/teamviewer.png",
     brief: [
-      "Working at TeamViewer (TV) in Göppingen, Germany, was a great experience to broaden both my horizons and experience working in a corporate setting, while developing my user research skills within the company.",
-      "As one of the 4 UX Researchers in the company, I was in charge of answering a variety of research questions within the company raised by stakeholders, including Designers, Product Managers, and Product Owners. All of these projects begin by deciding which method best suited finding the answer, wether that was user interviews, analysing tracked data through Looker, Product Solution Matrixes, or even usability testing and heuristic evaluations. Once data was collected, analysed and filtered, it would be formatted and presented to the relevant stakeholders through written reports, collaborative discussions and written reports.",
-      "Within the company, the projects which pushed me the most was working on the first release of TeamViewer DEX, which at the time was a new automation feature which automatically resolved the most common and some of the more basic software issues that IT admins would normally have to keep track off. This was an especially difficult project due to the scale and importance to the company, with over 40 multi-round interviews having been run, involving use-case validation and usability testing. Outside of the interviews, I had to re-develop the structure of data collection and organisation for the UXR team to improve their existing workflows regarding user interviews, and created a brand new in-depth User Persona specifically tailored to DEX.",
+      "My time at TeamViewer in Göppingen, Germany, broadened my horizons, gave me experience of a corporate setting, and built up my user research skills.",
+      "As one of 4 UX Researchers, I answered questions from Designers, Product Managers and Product Owners. Each one started with finding the right method, whether that was user interviews, Looker data, Product Solution Matrixes, usability testing or heuristic evaluations. I then shared what I found through written reports and collaborative discussions.",
+      "The project that pushed me most was the first release of TeamViewer DEX, a new feature that automatically fixes common software issues so IT admins don't have to track them. It mattered a lot to the company, and it took over 40 multi-round interviews to validate use cases and test usability.",
+      "Alongside the interviews, I reworked how the team collected and organised its data, and created a new in-depth User Persona for DEX.",
       "2 letters of recommendation are available from both the UXR Team Lead and the Director of Design, which can be provided on request."
     ],
     photobooth: [
@@ -154,9 +161,9 @@ export const projectsContent = {
     categories: ["CAD", "DESIGN", "OTHER"],
     image: "/project_icons/cascados.png",
     brief: [
-      "Cascados was a module focused around creating a product for 30 years in the future. As such, we looked at an existing problem, in our case water quality in Mexico city, and technology being developed now, those being bioelectrochemical systems and advanced filtration techniques, to try and solve a problem for the future.",
-      "Our solution was a decentralised water purifying system which utilised both rainwater and grey-water to ensure a high enough flow for a household. Water would first be filtered by a Ceramic-Zeolite filter to remove large particles and pollutants, including arsenic, before moving through the Microbial Fuel Cells that both remove soluble pollutant and harmful microbes, while generating a small electrical current that helps to power the system.",
-      "The final design could be installed on any wall and integrated into the existing piping system easily, allowing for each household to have their own integrated system. This would avoid using the leaky pipe systems found outside homes which often leech additional arsenic and pollutants into the water supply."
+      "Cascados was a module on creating a product for 30 years in the future. We took a current problem, water quality in Mexico City, and applied technology in development today: bioelectrochemical systems and advanced filtration.",
+      "Our solution was a decentralised water purifier that uses rainwater and grey water to give a household enough flow. A Ceramic-Zeolite filter removes large particles and pollutants, including arsenic. Microbial Fuel Cells then remove soluble pollutants and harmful microbes, while generating a small current that helps power the system.",
+      "It can be installed on any wall and connected to existing pipes, giving each household its own system. That avoids the leaky pipes outside homes, which often leach more arsenic and pollutants into the water."
     ],
     photobooth: [
       [
@@ -184,9 +191,9 @@ export const projectsContent = {
     categories: ["CAD", "DESIGN", "PROTOTYPING", "OTHER"],
     image: "/project_icons/hydron.png",
     brief: [
-      "This project combined my love for waterpolo and product design into one. As such, being part of a waterpolo team, finding 3 key issues to fix was easy, and after a brief research session I was able to highlight 3 key problems: Comfortability, hear-ability and intuitively.",
-      "Firstly, comfortability, where ear cuffs are often made out of hard plastic and put pressure on sensitive areas around the ear. Secondly, during a match, it is often difficult to hear the referees and teammates, so hear-ability needs to be improved. Finally, it can often be unintuitive to put on waterpolo caps, so the design was made to ensure a user puts them in the correct orientation.",
-      "Through the standard design journey, I experimented with new softwares, such as Rhino 3D, and with new modelling techniques to create voronoi meshes, and fluid dynamics to create effects. I used this project as a way to push the boundaries of what I was capable in CAD, especially focusing on improving my Blender skill-set."
+      "This project brought together two things I love: waterpolo and product design. Being in a team made the problems easy to find, and some brief research narrowed them down to 3.",
+      "The first was comfort, as ear cuffs are often hard plastic and press on sensitive areas around the ear. The second was hearing, because it's hard to hear referees and teammates during a match. The third was how unintuitive caps can be to put on, so I designed mine to make sure they always go on the right way round. The shape of my ear covers also tackles the first two problems, spreading out the force and letting more sound in.",
+      "I also wanted to see how far I could push my CAD skills, especially in Blender, so I tried out new software like Rhino 3D and new techniques for voronoi meshes and fluid dynamics effects."
     ],
     photobooth: [
       [
@@ -213,8 +220,10 @@ export const projectsContent = {
     categories: ["DESIGN", "OTHER"],
     image: "/project_icons/wirecast.png",
     brief: [
-      "Wirecast focused on the future of smart homes, and a more intuitive way to control smart plugs. The developed application would have 3 unique selling points for users: Energy monitoring, ease of set-up, energy management, and finally cost management. This would allow them to keep track of which appliances used the most energy, control them to only be functional during low cost hours, and remotely switch them on and off.",
-      "Development of the app began with a site-map to understand how users would use, and in which order information would be displayed. Balsamiq was then used to create interactive mocks of the application to be brought forwards for user testing allowing for issues regarding workflow, gaps and clarity to be discovered. This allowed me to go onto Figma development to create an MVP application which included a Splice 3D model, using ReactJS, which would allow users to interact with a 3D model of their house and the position of the plugs around it (Try out the model below!). A final SUS test on the product determined how good of a result it was and if any glaring issues were found by potential users."
+      "Wirecast is a more intuitive way to control smart plugs. The app shows which appliances use the most energy, runs them only during low-cost hours, and switches them on and off remotely.",
+      "I started with a site map to plan how people would use the app and in what order they'd see information. Interactive Balsamiq mock-ups then went to user testing, which revealed issues with workflow, gaps and clarity.",
+      "I then built an MVP in Figma, including a Spline 3D model in ReactJS that lets users explore their house and where the plugs are. You can see it in the video below.",
+      "A final System Usability Scale (SUS) test measured how well it worked and whether users found any major issues."
     ],
     photobooth: [
       [
@@ -242,9 +251,10 @@ export const projectsContent = {
     categories: ["DESIGN", "PROGRAMMING", "PROTOTYPING"],
     image: "/project_icons/sensing-and-iot.png",
     brief: [
-      "For a project revolving around Sensing & Internet of Things, I decided to explore how temperature and humidity could be used to build the \u201cworld\u2019s worst intruder alarm system\u201d.",
-      "By comparing indoor humidity and indoor temperature to the outdoor temperature, the device can be used to detect intruders in a room and trigger alerts for them. I used a Raspberry Pi 3B+ to compute and store the data, a DHT11 humidity and temperature sensor, and finally Open Meteo API to collect external temperature at 15-minute intervals. By analysing the data collected, we could then work out if 0, 1 or 2+ people were present in the room in the last hour. Intruder presence would send an email alert to the phone, while the data would be stored locally and could be accessed remotely via a Flask REST API.",
-      "While the project would not be realistically useful, it still helped me to develop my coding, electronics, and data analysis skills and was a fun experiment to complete for a module."
+      "Could you catch an intruder with just temperature and humidity? For my Sensing & Internet of Things module, I set out to build the \"world's worst intruder alarm\".",
+      "By comparing indoor humidity and temperature with the temperature outside, the device works out if 0, 1 or 2+ people were in a room in the last hour. If it spots an intruder, it sends an email to your phone.",
+      "Inside, a Raspberry Pi 3B+ computes and stores the data from a DHT11 sensor, while the Open-Meteo API supplies the outdoor temperature every 15 minutes. You can also reach the data remotely through a Flask REST API.",
+      "You wouldn't want to rely on it in real life, but it was a fun experiment that developed my coding, electronics and data analysis skills."
     ],
     photobooth: [
       [
@@ -266,9 +276,10 @@ export const projectsContent = {
     categories: ["CAD", "DESIGN", "PROGRAMMING", "DATA ANALYSIS", "OTHER"],
     image: "/project_icons/apollo-drones.png",
     brief: [
-      "Apollo drones aims to aid Search and Rescue (SaR) teams globally to fix an issue they all face: how do you cover a large area in a short amount of time to increase the likelihood of saving someone’s life?",
-      "Our proposed solution was a Hardware as a Service (Haas) model which sold a drone integrated with a Machine Learning (ML) system to apply probability based targeting to search strategies. Using inputs regarding the last known location and demographics of a victim, the algorithm could predict the most probable locations they would end up after a certain amount of time to guide SaR teams to look there first.",
-      "Within the team, I first ran extensive user research, contacting 133 different stakeholders, including 40 different SaR teams within the UK, to gain valuable insights into what issues they face. This allowed me to adapt the design of the drone to target key issues; for example, the drone focused around being easily repairable, especially with the high likelihood of a crash when the drone is flown in bad weather, or the inclusion of a roll cage to protect key components and the ability for all parts to be fixed with off the shelf components. I also developed the UI for the ML algorithm and drone interface to be as easy for a user to interact with. I then collaborated with the rest of the team to develop system diagram, business models and both Top Down and Bottom up analysis for both SaR and Military rescue applications.  "
+      "When someone goes missing, how do you search a huge area fast enough to save their life? Search and Rescue (SaR) teams everywhere face this problem, and it's a problem Apollo Drones set out to solve.",
+      "Our idea was a drone sold as Hardware as a Service (HaaS), with Machine Learning (ML) built in. It takes a person's last known location and demographics, then predicts where they're likely to be, so teams know where to look first.",
+      "I started by contacting 133 stakeholders, including 40 UK SaR teams, to find out what they struggle with. Their answers shaped the design: crashes are likely in bad weather, so the drone has a roll cage and can be fixed with off-the-shelf parts.",
+      "I also designed the UI for the ML algorithm and drone to be easy to use, and worked with my team on system diagrams, business models, and top-down and bottom-up analysis for SaR and military rescue."
     ],
     photobooth: [
       [
@@ -296,9 +307,10 @@ export const projectsContent = {
     categories: ["CAD", "DESIGN", "PROGRAMMING", "PROTOTYPING", "OTHER"],
     image: "/project_icons/cuttleswish.png",
     brief: [
-      "This project stretched all aspects of industrial design starting from user research, through designing and prototyping, all the way to a Minimum Viable Product. The aim of this product was to help elderly people with cooking, keeping track of the time and temperature that food was cooking, and maintaining it stirred to stop it from burning.",
-      "Within the team of 3, I developed concepts (both sketched and CAD) following the design language of 3 different companies: KitchenAid, JosephJoseph, and finally PELEGDESIGN. As a team and speaking to our focus groups, we ended up deciding on going down the zoomorphic appearance and creating a product with a cute appearance of a cuttleswish. I then brought these concept to life, recreating them firstly in Onshape and then transferring them to Blender, keeping a focus on how they would be realistically manufactured and designed. The final key work I did within the group was the electronics and manufacture of the product.",
-      "Like any large project, issues arose during it. Outside of having a team-mate drop out early in the project, within the design we faced mechanical issues as the support legs would bend unevenly, however this was fixed with a decant mechanism. Securely attaching the pot also required a lot of iteration, with a fine balance between arm bend and grip being achieved by ony having the ends be made out of TPU. Another major issue was electronics, as the lack of a custom PCB meant that we were forced to cram a large quantity of components inefficiently inside the shell, resulting in shorts and wires de-soldering."
+      "Cuttleswish helps older people cook by tracking time and temperature, and stirring food to stop it burning. The project covered every stage of industrial design, from problem-focused user research to a Minimum Viable Product.",
+      "In our team of 3, I sketched and modelled concepts inspired by KitchenAid, Joseph Joseph and Peleg Design. Our creativity helped us settle on something cuter: a zoomorphic design based on a cuttlefish.",
+      "I then brought those concepts to life in Onshape and Blender, keeping manufacture in mind, before taking on the electronics and manufacture of the final product.",
+      "Like any big project, it had its problems. We lost a team-mate early on, and the support legs bent unevenly until we added a decant mechanism. Attaching the pot took a lot of iteration, until we found the balance between arm bend and grip by making only the ends from TPU. With no custom PCB, we also had to cram components into the shell, which caused shorts and wires de-soldering, leading to functionality issues."
     ],
     photobooth: [
       [
@@ -330,8 +342,10 @@ export const projectsContent = {
     categories: ["CAD", "SIMULATION"],
     image: "/project_icons/aerodynamics-of-a-motorbike.png",
     brief: [
-      "The aim within this project was to design a vehicle and test it’s aerodynamics using Solidworks FlowSimulator. For my inspiration of the design, I looked at two motorbikes whose designs I love: the Ducati Diavel, and the Arc Vector, and then introduced design aspects such as the unconventional front suspension and large intakes into my design. I also introduced a much more angular and aggressive shape into the design to accentuate what I like about motorbikes.",
-      "Unlike those who designed a car, I also had to take into account the driver into my simulation, so I learnt how mannequins worked in Blender to be able to model the correct orientation and flow of a person. This turned out to be much more difficult than imagined, as Solidworks would not accept the geometry without me doing some “wizard-y” in onshape to re-create the body as a solid object."
+      "I designed a vehicle and tested its aerodynamics in SolidWorks Flow Simulation.",
+      "The design drew on two motorbikes I love, the Ducati Diavel and the Arc Vector, with their unconventional front suspension and large intakes, plus a more angular, aggressive shape.",
+      "Unlike a car, a motorbike's simulation has to include the rider, so I learnt to use mannequins in Blender to model their drag. This was harder than I expected. SolidWorks wouldn't accept the geometry due to surface issues until I did some \"wizard-y\" in Onshape to re-create the body as a solid object.",
+      "The results of these tests were then used to improve the design of the motorbike."
     ],
     photobooth: [
       [
@@ -356,11 +370,11 @@ export const projectsContent = {
     categories: ["CAD", "SIMULATION"],
     image: "/project_icons/fea-of-a-hip-implant.png",
     brief: [
-      "This Finite Element Analysis (FEA) project focused on solving a structural challenge in biomedical engineering: the premature failure of hip implants.",
-      "The aim was to create a design that could survive a 15-year lifecycle of 5 million loading cycles, while being able to resonate so it could undergo acoustic emission testing.",
-      "To make the design work, I needed to reduce the mass enough for the implant to resonate at five different natural frequencies within a specific range, while maintaining enough strength to withstand 2,490 N of force.",
-      "Through a total of 32 iterations, I refined the mesh to eliminate stress singularities and experimented with stem indentations and thinned sideways supports, to find a balance between weight and durability.",
-      "By the final iteration, I successfully developed a titanium alloy (Ti-6AL-4V) design that met both criteria, surviving over 5 million cycles while being able to resonate at the required frequencies."
+      "A Finite Element Analysis (FEA) project tackling a biomedical problem: hip implants that fail too early.",
+      "The design had to survive 5 million loading cycles, a 15-year lifecycle, and resonate so it could undergo acoustic emission testing.",
+      "That meant reducing mass enough to resonate at five natural frequencies within a set range, while still withstanding 2,490 N of force.",
+      "Over 32 iterations, I refined the mesh to eliminate stress singularities and tested stem indentations and thinner side supports to balance weight and durability.",
+      "The final titanium alloy (Ti-6Al-4V) design met both goals."
     ],
     photobooth: [
       [
@@ -385,10 +399,11 @@ export const projectsContent = {
     categories: ["CAD", "DESIGN", "SIMULATION", "OTHER"],
     image: "/project_icons/mycoedge.png",
     brief: [
-      "MycoEdge was a razor designed to tackle all aspects of sustainability throughout it's lifecycle and reduce its environmental impact.",
-      "For this project, I worked with a 4 person team to design a sustainable razor made from 304 stainless steel, featuring a unique twisting L-lever mechanism for blade sharpening and replacement.",
-      "I focused on the mechanical functionality of the device, using simulations to prove the lever system worked and was manufacturable. Beyond the material choice, we integrated ink into the handle that would change colour depending on how wet it got, in order to reduce water waste during use, and created mycelium packaging to improve sustainability.",
-      "Phase 1 of this project also involved the individual analysis of a company, in my case Gilette, which can be seen in the second document I have attached below."
+      "How sustainable can a razor be? MycoEdge was our answer, considering its impact at every stage of its lifecycle.",
+      "As a team of 4, we designed a 304 stainless steel razor with a unique twisting L-lever mechanism for sharpening and replacing the blade.",
+      "My focus was the mechanics, and I used simulations to prove the lever system worked and could be manufactured.",
+      "We added some smaller touches too: ink in the handle that changes colour as it gets wet, to cut water waste, and packaging made from mycelium.",
+      "Phase 1 of this project had me analyse a company on my own. I chose Gillette, and you can read that in the second document below."
     ],
     photobooth: [
       [
@@ -405,7 +420,7 @@ export const projectsContent = {
     ],
     documentation: [
       { name: "16_12_23_MycoEdge.pdf", link: "/projects/2023_MycoEdge/16_12_23_MycoEdge.pdf" },
-      { name: "04_11_23_Gilette.pdf", link: "/projects/2023_MycoEdge/04_11_23_Gilette.pdf" }
+      { name: "04_11_23_Gillette.pdf", link: "/projects/2023_MycoEdge/04_11_23_Gilette.pdf" }
     ]
   },
 
@@ -417,10 +432,9 @@ export const projectsContent = {
     categories: ["DESIGN", "PROTOTYPING", "OTHER"],
     image: "/project_icons/sentire.png",
     brief: [
-      "HCDE (Human Centered Design Engineering) was a project focused on dealing with waste along canals in London.",
-      "Working with the Canal & River Trust, we focused our user research on 3 key sections: Observing the problem, interviewing volunteers, and personally volunteering with the trust to understand all the problems they faced.",
-      "All of this research led to the development of an application called Sentire. This allowed users to report trash along the canal, together with the severity, in order for the Trust to be able to plan where they went collecting to deal with hotspots.",
-      "Unfortunately the file showcasing the app has corrupted, so only a partial section of the work is visible."
+      "Sentire is an app for reporting waste along London's canals, developed with the Canal & River Trust during my Human Centred Design Engineering (HCDE) project.",
+      "To understand the problem first-hand, we observed it, interviewed volunteers, and volunteered with the Trust ourselves. That research led to Sentire, an app that lets people report waste and how severe it is, so the Trust can plan collections around hotspots.",
+      "The file showing the app has since corrupted, so only part of the work is visible."
     ],
     photobooth: [
       [
@@ -444,7 +458,7 @@ export const projectsContent = {
 
   // --- 2022 ---
   "a-level-nea": {
-    title: "A-level NEA",
+    title: "Foldable Drawing Board",
     date: "Oct 2021 - Apr 2022",
     year: 2022,
     tags: ["ONSHAPE", "BLENDER", "MICROSOFT SUITE", "3D PRINTING", "MANUFACTURE", "USER RESEARCH"],
@@ -452,9 +466,9 @@ export const projectsContent = {
     image: "/project_icons/a-level-nea.png",
     brief: [
       "My A-Level project set out to solve a fundamental problem for anyone who wants to use A3 drawing boards daily: the complete lack of portability.",
-      "Inspired by Dieter Rams’ 10 principles of good design, I engineered a foldable A3 drawing board that folds to fit inside a backpack while maintaining a rigid, seamless surface to work on when opened.",
-      "The design journey required me to solve mechanical challenges, ranging from experimentation with Galaxy Z Fold-inspired hinges to developing a cam-based mechanism that maintains a flat surface when open without crimping the leather interior. ",
-      "The physical prototype validated the ergonomic and functional principles of portable drafting surfaces."
+      "Inspired by Dieter Rams' 10 principles of good design, I built a board that folds to fit in a backpack, but still opens into a rigid, seamless surface.",
+      "Making it work took plenty of problem-solving. I tried hinges inspired by the Galaxy Z Fold, before developing a cam mechanism that keeps the board flat when open without crimping the leather interior.",
+      "The physical prototype I ended up building showed the idea worked, both ergonomically and functionally."
     ],
     photobooth: [
       [
@@ -487,8 +501,9 @@ export const projectsContent = {
     categories: ["CAD", "PROGRAMMING", "PROTOTYPING"],
     image: "/project_icons/walker.png",
     brief: [
-      "This was a self-led project for me to experiment on building a 4 legged robot walker which could be powered, through a series of cams and mechanisms, with only 2 servo motors per leg for both pitch, tilt and yaw, and controlled with a Raspberry Pi. The whole contraption would be 3D printed and assembled by myself at home.",
-      "Unfortunately, only some images have survived since the project was first made."
+      "A self-led project to build a 4-legged robot walker, 3D printed and assembled at home.",
+      "Using cams and mechanisms, each leg needed only 2 servo motors to control pitch, tilt and yaw, with a Raspberry Pi running the robot.",
+      "Sadly, only some images of the project have survived."
     ],
     photobooth: [
       [
@@ -514,9 +529,9 @@ export const projectsContent = {
     categories: ["CAD", "PROGRAMMING", "DATA ANALYSIS", "PROTOTYPING", "OTHER"],
     image: "/project_icons/gcse-nea.png",
     brief: [
-      "The aim of this project was to create a product that would help you practice sports. In my case, I choose to create a product for Dodgeball.",
-      "Starting from basic research into the market, I worked on simple card prototypes first, which ended up evolving into a physical product made out of laser cut acrylic.",
-      "However, most of the iteration and work I did was focused on getting a simple image recognition algorithm working with a Raspberry 3b+ and the OpenCV repository for Python."
+      "For my GCSE coursework (NEA), I designed a product to help people practise dodgeball. It uses image recognition to detect the ball, and then dodges it as the user throws it.",
+      "Starting from basic research into the market, I worked on simple card prototypes, which grew into a physical product made out of laser-cut acrylic.",
+      "Most of my work focused on getting a simple image recognition algorithm working on a Raspberry Pi 3B+ with Python and OpenCV."
     ],
     photobooth: [
       [
@@ -544,11 +559,11 @@ export const projectsContent = {
     categories: ["CAD"],
     image: "/project_icons/nasa-vesuvius-challenge.png",
     brief: [
-      "Hosted on HeroX, Nasa had run a challenge called Exploring Hell: Avoiding Obstacles on a Clockwork Rover. The solution the innovators had to find was an innovative obstacle avoidance sensor for Nasa\u2019s mechanical clockwork rover.",
+      "NASA ran a challenge on HeroX called Exploring Hell: Avoiding Obstacles on a Clockwork Rover. The goal was a sensor to help its mechanical rover avoid obstacles.",
       "The only issue? It had to work on Venus.",
-      "With a temperature of 450\u00B0C, surface pressure 92 times that of Earth, and no electronics available, the solution I delivered had to work in the most extreme of environments. Meanwhile, it had to detect slopes greater than 30 degrees, rocks greater or holes smaller than 0.35m, and have a lifetime of over 6 months.",
-      "The solution I devised used a series of levers, gears, pendulums and differentials to be able to always detect slopes relative to gravity and ensure the rover never went over a 30 degree tilt.",
-      "https://www.herox.com/VenusRover"
+      "That meant 450°C heat, 92 times Earth's surface pressure and no electronics, for over 6 months. It still had to spot slopes over 30°, as well as rocks and holes around 0.35m.",
+      "My solution used levers, gears, pendulums and differentials to measure slopes relative to gravity, so the rover never tilted past 30°.",
+      { label: "View the challenge on HeroX", href: "https://www.herox.com/VenusRover" }
     ],
     photobooth: [
       [

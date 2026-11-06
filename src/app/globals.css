@@ -67,3 +67,18 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--secondary-color) !important;
   text-decoration: underline !important;
 }
+
+.site-header {
+  padding: 2rem;
+}
+
+/* Below this width, page text starts to reach the logo, so the header needs a bar */
+@media (max-width: 1439px) {
+  .site-header {
+    padding: 1rem 2rem;
+  }
+
+  .site-header:not(.menu-open) {
+    background-color: var(--bg-color);
+  }
+}

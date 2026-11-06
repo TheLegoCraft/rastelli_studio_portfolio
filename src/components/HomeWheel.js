@@ -13,10 +13,9 @@ const RING = `calc(${HOLE} * 0.95)`; // Slightly inside the hole, clear of the t
 const WHEEL_TOP = '66dvh';
 const WHEEL_VISIBLE_SHARE = 0.34;
 const PANEL_BOTTOM = 'calc(38dvh + 0.75rem)';
-const FEATURE_BG = '#D9D9D9';
 const SCROLL_PER_STOP = '70vh';
 // Extra scroll on About me before the wheel starts turning, as a share of the screen height
-const START_HOLD = 0.6;
+const START_HOLD = 1.2;
 
 // Same result as the /work grid: repeat(auto-fill, minmax(200px, 1fr)), 1.25rem gap,
 // inside a 1000px max-width page with 5% side padding
@@ -180,7 +179,7 @@ function StopPanel({ stop, isActive, isFirst }) {
         inset: 0,
         borderRadius: '8px',
         overflow: 'hidden',
-        backgroundColor: stop.feature ? FEATURE_BG : '#0a0a0a',
+        backgroundColor: '#0a0a0a',
         opacity: isActive ? 1 : 0,
         transition: 'opacity 0.35s ease',
       }}
@@ -199,9 +198,6 @@ function StopPanel({ stop, isActive, isFirst }) {
             sizes="(max-width: 1200px) 90vw, 46vw"
             style={{ objectFit: 'cover', objectPosition: stop.imagePosition || 'center' }}
           />
-        )}
-        {stop.feature && (
-          <span className="text-primary" style={{ fontSize: 'clamp(1.75rem, 4vw, 3.5rem)', fontWeight: 500 }}>{stop.title}</span>
         )}
       </Link>
 
@@ -263,7 +259,6 @@ function WheelTile({ stop, angle, isActive, onSelect }) {
         style={{
           position: 'absolute',
           inset: 0,
-          backgroundColor: stop.feature ? FEATURE_BG : undefined,
           backgroundImage: stop.tileImage ? `url("${stop.tileImage}")` : undefined,
           backgroundSize: 'cover',
           backgroundPosition: 'center',

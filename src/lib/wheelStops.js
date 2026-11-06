@@ -27,49 +27,49 @@ export const wheelStops = [
     body: (
       <>
         <p style={{ margin: '0 0 0.6em' }}>
-          Hi there, I&apos;m <strong>Francesco</strong>. While I may just be a recent graduate from Imperial College London, if you were to ask me what I want to be, I would say:
+          Hi, I&apos;m <strong>Francesco</strong>. I&apos;ve just graduated from Imperial College London, and I know what I want to be:
         </p>
         <p className="text-primary" style={{ margin: '0 0 0.6em', fontWeight: 'bold' }}>
           A designer for the future.
         </p>
         <p style={{ margin: 0 }}>
-          Like everybody else, I am driven by <strong>passion</strong>. Not just passion for design, but passion for cooking, art, sports and a plethora of other things. A passion and hope of a better future which fuels my creativity.
+          My creativity is fuelled by a love for design, cooking, art and sport. Keep scrolling for some of my favourite projects, with all of my work at the end. Enjoy!
         </p>
       </>
     ),
   },
   projectStop('TeamViewer', 'teamviewer', {
-    body: "Working at TeamViewer (TV) in Göppingen, Germany, was a great experience to broaden both my horizons and experience working in a corporate setting, while developing my user research skills within the company.",
+    body: "At TeamViewer in Germany, I was one of four UX Researchers, helping designers and product managers find answers through interviews and data. It was a big step forward for my research skills.",
   }),
   projectStop('Hibearnate', 'hibearnate', {
     image: '/projects/2026_Hibearnate/HeroShot_On_V1.png',
-    body: "This project can be split into 2 distinct sections: the first part involved a pitch to a group of VCs, while the second part was bringing the product and business actually to life.",
+    body: "Light through the window was ruining my team's sleep, and 71% of people we surveyed felt the same. So we pitched a window film that blocks up to 97% of light, then set about bringing it to life.",
   }),
   projectStop('Cascados', 'cascados', {
-    body: "Cascados was a module focused around creating a product for 30 years in the future. We looked at an existing problem, the water quality in Mexico city, and how developing technologies could be used to try and solve it.",
+    body: "What could we design for 30 years in the future? We took on a real problem, water quality in Mexico City, and explored how new technology could help solve it.",
   }),
   projectStop('Hydron', 'hydron', {
-    body: "This project combined my love for waterpolo and product design into one. It focused on fixing 3 key issues with waterpolo caps: Comfortability, hear-ability and intuitiveness.",
+    body: "A redesigned waterpolo cap that's more comfortable, easier to hear through and more intuitive to use.",
   }),
   projectStop('Cuttleswish', 'cuttleswish', {
-    body: "Cuttleswish stretched across all aspects of industrial design, resulting in a functional MVP which aimed to help elderly people with cooking, reducing the likelihood of them burning food.",
+    body: "We wanted to help older people cook with less risk of burning their food. That took us through every stage of industrial design, ending in a working MVP.",
   }),
   projectStop('Aerodynamics of a Motorbike', 'aerodynamics-of-a-motorbike', {
-    body: "This project began with designing a vehicle without any specifications, to then test its aerodynamics using Solidworks FlowSimulator. The final design was formed from a mix of inspiration and my own creativeness.",
+    body: "With no specification to follow, I designed a vehicle from scratch using a mix of inspiration and my own ideas, then tested how it performed in SolidWorks Flow Simulation.",
   }),
   {
     title: 'Hobbies',
     href: '/hobbies',
     tileImage: '/project_icons/photography-and-hobbies.png',
     image: '/projects/Ongoing_PersonalWork/image_1.JPG',
-    body: "My hobbies involve a variety of things, ranging from backpacking, to film photography, to my love for waterpolo, and even cooking. The pictures on this page are here to show a less professional side of me.",
+    body: "Backpacking, film photography, waterpolo and cooking: a look at the less professional side of me.",
   },
   projectStop('Portfolio Design', 'designing-and-building-the-portfolio', {
     image: '/projects/Ongoing_Portfolio/Version_3.webp',
-    body: "The portfolio has always been an ongoing work in progress. Having been built across Figma, Adobe portfolios and now Antigravity, it has taken various shapes and forms. This current version is hosted on Github.",
+    body: "This portfolio is always a work in progress. It started as a Figma PDF, became an Adobe site, and now it's the version you're looking at.",
   }),
   projectStop('Apollo Drones', 'apollo-drones', {
-    body: "Apollo drones aims to aid Search and Rescue teams globally to fix an issue they all face: how do you cover a large area in a short amount of time to increase the likelihood of saving someone’s life?",
+    body: "Apollo Drones aims to help Search and Rescue teams with a critical problem: how do you cover a large area quickly enough to save someone's life?",
   }),
   {
     title: 'CV',
@@ -83,7 +83,9 @@ export const wheelStops = [
   {
     title: 'See all my work',
     href: '/work',
-    feature: true,
+    tileImage: '/project_icons/work-tile.webp',
+    image: '/project_icons/work.webp',
+    imagePosition: 'top',
     body: 'Every project, from CAD and prototyping to programming and data analysis.',
     linkLabel: 'Go to Work →',
   },

@@ -18,18 +18,14 @@ export function ProjectBrief({ paragraphs }) {
         letterSpacing: '0.01em',
       }}
     >
-      {paragraph.startsWith('http') ? (
+      {paragraph.href ? (
         <a
-          href={paragraph}
+          href={paragraph.href}
           target="_blank"
           rel="noopener noreferrer"
-          style={{
-            color: 'var(--secondary-color)',
-            textDecoration: 'underline',
-            wordBreak: 'break-all',
-          }}
+          style={{ color: 'var(--secondary-color)', textDecoration: 'underline' }}
         >
-          {paragraph}
+          {paragraph.label}
         </a>
       ) : paragraph}
     </p>

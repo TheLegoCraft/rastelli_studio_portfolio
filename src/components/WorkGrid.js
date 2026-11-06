@@ -59,7 +59,7 @@ const projectsData = [
   },
   {
     year: 2025,
-    title: "Sensing and IoT",
+    title: "World's Worst Intruder Alarm",
     slug: "sensing-and-iot",
     image: "/project_icons/sensing-and-iot.png",
   },
@@ -107,7 +107,7 @@ const projectsData = [
   // --- 2022 ---
   {
     year: 2022,
-    title: "A-level NEA",
+    title: "Foldable Drawing Board",
     slug: "a-level-nea",
     image: "/project_icons/a-level-nea.png",
   },

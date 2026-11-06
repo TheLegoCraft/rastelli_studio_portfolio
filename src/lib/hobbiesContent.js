@@ -10,7 +10,7 @@ export const hobbiesSections = [
   {
     title: 'Backpacking / Iceland',
     brief: [
-      'After graduating university, I took on the challenge of cycling across first Iceland and then Europe by myself. Both were amazing experiences, offering a mix of stunning views, challenging landscapes, rough roads, and amazing people.',
+      'After graduating from university, I took on the challenge of cycling across first Iceland and then Europe by myself. Both were amazing experiences, offering a mix of stunning views, challenging landscapes, rough roads, and amazing people.',
       'Crossing the Icelandic highlands proved to be one of the hardest things I’ve ever done, battling days of rain cycling across volcanic ash, fording glacial rivers and constantly fighting the wind; however, the struggle made the views even more worth it.',
     ],
     photobooth: [
@@ -38,7 +38,7 @@ export const hobbiesSections = [
   {
     title: 'Backpacking / Europe',
     brief: [
-      'While Europe was much easier, it was still introspective in its own way (having cycled from Trieste to Berlin passing by Ljubljana, Vienna, Brno and Wroclaw) offering such a wide and interesting variety of cultures and food that will stay with me for the rest of my life.',
+      'While Europe was much easier, it was still introspective in its own way (having cycled from Trieste to Berlin passing by Ljubljana, Vienna, Brno and Wroclaw), offering such a wide and interesting variety of cultures and food that will stay with me for the rest of my life.',
     ],
     photobooth: [
       [

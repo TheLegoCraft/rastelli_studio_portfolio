@@ -19,16 +19,16 @@ export default function Navigation() {
   return (
     <>
       {/* Header Container for perfect vertical alignment */}
-      <header style={{
+      <header className={isOpen ? 'site-header menu-open' : 'site-header'} style={{
         position: 'fixed',
         top: 0,
         left: 0,
         width: '100%',
-        padding: '2rem 2rem',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
         zIndex: 100,
+        transition: 'background-color 0.3s ease',
         pointerEvents: 'none', // Allow clicking through empty space
       }}>
         {/* Home Logo */}
