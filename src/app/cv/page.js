@@ -132,6 +132,19 @@ export default function CVPage() {
         </div>
       </section>
 
+
+      {/* Documentation */}
+      <section style={{ marginBottom: '3rem' }}>
+        <h2 className="title-small text-primary" style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.4)', paddingBottom: '0.5rem', marginBottom: '1.5rem' }}>Documentation</h2>
+        <a
+          href="/CV_professional.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="doc-link body-main"
+        >
+          CV_professional.pdf
+        </a>
+      </section>
     </main>
   );
 }

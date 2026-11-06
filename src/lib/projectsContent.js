@@ -5,7 +5,7 @@ export const projectsContent = {
     date: "Oct 2025 - Jun 2026",
     year: 2026,
     tags: ["ONSHAPE", "FIGMA", "MICROSOFT SUITE", "MANUFACTURE", "USER RESEARCH"],
-    categories: ["CAD", "DESIGN", "PROTOTYPING", "DATA ANALYSIS", "OTHER"],
+    categories: ["CAD", "DESIGN", "DATA ANALYSIS", "PROTOTYPING", "OTHER"],
     image: "/project_icons/masters-thesis.png",
     brief: [
       "The frequent flooding in rural Vietnam over the typhoon season regularly ruins the local firewood stores that millions rely on, causing severe energy poverty and dangerous conditions for the victims. To provide a localised humanitarian intervention, this thesis presents the context, design, manufacture, testing, and evaluation of a small-scale, natural-draft, monorator wood-gasifier stove designed to dry and burn wet wood after a flood. Given the constraints of the rural Vietnamese context and the delivery of aid within it, the stove was designed and manufactured to use standard stainless steel sheets and insulation, to operate after submersion, and to be used for cooking and heating. While the testing proved the design was only partially successful, it yielded extremely promising results and lessons that, with further testing of a potential redesign, should be fixable, leading to a real solution ready to be integrated into the remote, rural communities most vulnerable to natural disasters."
@@ -27,7 +27,8 @@ export const projectsContent = {
       ]
     ],
     documentation: [
-      { name: "Masters_Thesis_Executive_Summary.pdf", link: "#" }
+      { name: "03_06_26_Thesis.pdf", link: "/projects/2026_Masters/03_06_26_Thesis.pdf" },
+      { name: "15_06_26_Vivo.pdf", link: "/projects/2026_Masters/15_06_26_Vivo.pdf" }
     ]
   },
 
@@ -35,8 +36,8 @@ export const projectsContent = {
     title: "Hibearnate",
     date: "Oct 2025 - Apr 2026",
     year: 2026,
-    tags: ["BLENDER", "FIGMA", "ADOBE SUITE", "FRAMER", "MICROSOFT SUITE", "3D PRINTING", "MANUFACTURE", "ELECTRONICS", "USER RESEARCH", "TEAM PROJECT", "UI/UX", "BUISNESS STRATEGY"],
-    categories: ["CAD", "DESIGN", "DATA ANALYSIS", "PROGRAMMING", "OTHER"],
+    tags: ["BLENDER", "FIGMA", "ADOBE SUITE", "FRAMER", "MICROSOFT SUITE", "3D PRINTING", "MANUFACTURE", "ELECTRONICS", "USER RESEARCH", "TEAM PROJECT", "UI/UX", "BUSINESS STRATEGY"],
+    categories: ["CAD", "DESIGN", "DATA ANALYSIS", "PROTOTYPING", "OTHER"],
     image: "/project_icons/hibearnate.png",
     brief: [
       "This project can be split into 2 distinct sections: the first part involved a pitch to a group of VCs, while the second part was bringing the product and business actually to life. Beginning with the pitch:",
@@ -45,7 +46,7 @@ export const projectsContent = {
     ],
     photobooth: [
       [
-        { src: "/projects/2026_Hibearnate/Hibearnate_FINAL.mp4", alt: "Product Video", span: "1fr" }
+        { src: "https://youtu.be/_U5FiAJWmUQ", alt: "Hibearnate product video", span: "1fr" }
       ],
       [
         { src: "/projects/2026_Hibearnate/DarkLogo.png", alt: "Hibearnate Logo", span: "1fr", aspectRatio: "1" },
@@ -60,7 +61,7 @@ export const projectsContent = {
         { src: "/projects/2026_Hibearnate/Sleep like a bear 1.png", alt: "Advertisement", span: "1fr" }
       ],
       [
-        { src: "/projects/2026_Hibearnate/WhyUs.mp4", alt: "Product Video", span: "1fr" }
+        { src: "https://youtu.be/-kOn_dMu4zI", alt: "Hibearnate Why Us video", span: "1fr" }
       ]
     ],
     documentation: [
@@ -70,10 +71,10 @@ export const projectsContent = {
   },
 
   "notpla-business-strategy": {
-    title: "Notpla's Buisness Strategy",
+    title: "Notpla's Business Strategy",
     date: "Jan 2026 - Mar 2026",
     year: 2026,
-    tags: ["MICROSOFT SUITE", "USER RESEARCH", "TEAM PROJECT", "BUISNESS STRATEGY"],
+    tags: ["MICROSOFT SUITE", "USER RESEARCH", "TEAM PROJECT", "BUSINESS STRATEGY"],
     categories: ["DATA ANALYSIS", "OTHER"],
     image: "/project_icons/notpla-business-strategy.png",
     brief: [
@@ -99,90 +100,20 @@ export const projectsContent = {
     title: "Portfolio",
     date: "Ongoing",
     year: 2026,
-    tags: ["FIGMA", "ADOBE SUITE", "UI/UX"],
-    categories: ["DESIGN", "OTHER"],
+    tags: ["FIGMA", "ADOBE SUITE", "UI/UX", "PYTHON", "JAVASCRIPT"],
+    categories: ["DESIGN", "PROGRAMMING", "OTHER"],
     image: "/project_icons/designing-and-building-the-portfolio.png",
     brief: [
       "The portfolio has always been an ongoing work in progress. Having been built firstly on Figma to be uploaded as a pdf, then transferred to Adobe portfolios to be in the form of a website, before finally being rebuilt on Figma and integrated into a website using Antigravity and hosting on Github."
     ],
     photobooth: [
-      ["1fr"],
-      ["1fr", "1fr", "1fr"]
-    ],
-    documentation: []
-  },
-
-  "cycling-iceland-and-trans-european": {
-    title: "BIKEPACKING",
-    date: "Ongoing",
-    year: 2026,
-    tags: [],
-    categories: [],
-    image: "/project_icons/cycling-iceland-and-trans-european.png",
-    brief: [
-      "After graduating university, I took on the challenge of cycling across first Iceland and then Europe by myself.",
-      "Both were amazing experiences, offering both a mix of stunning views, challenging landscapes, rough roads, and amazing people. Crossing the Icelandic highlands proved to be one of the hardest things i’ve ever done, battling days of rain cycling across volcanic ash, fording glacial rivers and constantly fighting the wind; however, the struggle made the views even more worth it. While Europe was much easier, it was still introspective in it’s own way (having cycled from Trieste to Berlin passing by Ljubljana, Vienna, Brno and Wroclaw) offering such a wide and interesting variety of cultures and food that will stay with me for the rest of my life."
-    ],
-    photobooth: [
       [
-        { src: "/projects/2026_Cycling/image_1.jpeg", alt: "Image 1", span: "1fr", aspectRatio: "3/2" }
+        { src: "/projects/Ongoing_Portfolio/Version_1.webp", alt: "Version 1 of the portfolio", span: "1fr", objectFit: "contain" },
+        { src: "/projects/Ongoing_Portfolio/Version_2.webp", alt: "Version 2 of the portfolio", span: "1fr", objectFit: "contain" }
       ],
       [
-        { src: "/projects/2026_Cycling/image_2.jpeg", alt: "Image 2", span: "1fr", aspectRatio: "1" },
-        { src: "/projects/2026_Cycling/image_3.jpeg", alt: "Image 3", span: "2fr", aspectRatio: "3/2" }
-      ],
-      [
-        { src: "/projects/2026_Cycling/image_4.jpeg", alt: "Image 4", span: "2fr", aspectRatio: "3/2" },
-        { src: "/projects/2026_Cycling/image_5.jpeg", alt: "Image 5", span: "1fr", aspectRatio: "1" }
-      ],
-      [
-        { src: "/projects/2026_Cycling/image_6.jpeg", alt: "Image 6", span: "1fr", aspectRatio: "3/2" }
-      ],
-      [
-        { src: "/projects/2026_Cycling/image_7.jpeg", alt: "Image 7", span: "1fr" },
-        { src: "/projects/2026_Cycling/image_8.jpeg", alt: "Image 8", span: "1fr" },
-        { src: "/projects/2026_Cycling/image_9.jpeg", alt: "Image 9", span: "1fr" }
+        { src: "/projects/Ongoing_Portfolio/Version_3.webp", alt: "Version 3 of the portfolio", span: "1fr", objectFit: "contain", maxHeight: "none" }
       ]
-    ],
-    documentation: []
-  },
-
-  "photography-and-hobbies": {
-    title: "PHOTOGRAPHY AND HOBBIES",
-    date: "Ongoing",
-    year: 2026,
-    tags: [],
-    categories: [],
-    image: "/project_icons/photography-and-hobbies.png",
-    brief: [
-      "My personal work involves a variety of things, ranging from film photography, to my love for waterpolo, and even a large interest in cooking. Below are some pictures of my personal work and hobbies which show a less professional side of me."
-    ],
-    photobooth: [
-      [
-        { src: "/projects/Ongoing_PersonalWork/image_1.JPG", alt: "Image 1", span: "1fr", aspectRatio: "3/2" }
-      ],
-      [
-        { src: "/projects/Ongoing_PersonalWork/image_2.JPG", alt: "Image 2", span: "1fr", aspectRatio: "1" },
-        { src: "/projects/Ongoing_PersonalWork/image_3.JPG", alt: "Image 3", span: "2fr", aspectRatio: "3/2" }
-      ],
-      [
-        { src: "/projects/Ongoing_PersonalWork/image_4.JPG", alt: "Image 4", span: "2fr", aspectRatio: "3/2" },
-        { src: "/projects/Ongoing_PersonalWork/image_5.JPG", alt: "Image 5", span: "1fr", aspectRatio: "1" }
-      ],
-      [
-        { src: "/projects/Ongoing_PersonalWork/image_6.jpg", alt: "Image 6", span: "1fr", aspectRatio: "3/2" }
-      ],
-      [
-        { src: "/projects/Ongoing_PersonalWork/image_7.jpeg", alt: "Image 7", span: "1fr", aspectRatio: "3/2" }
-      ],
-      [
-        { src: "/projects/Ongoing_PersonalWork/image_8.jpeg", alt: "Image 8", span: "1fr" },
-        { src: "/projects/Ongoing_PersonalWork/image_9.jpeg", alt: "Image 9", span: "1fr" },
-        { src: "/projects/Ongoing_PersonalWork/image_10.jpeg", alt: "Image 10", span: "1fr" }
-      ],
-      [
-        { src: "/projects/Ongoing_PersonalWork/image_11.jpeg", alt: "Image 11", span: "1fr", aspectRatio: "3/2" },
-      ],
     ],
     documentation: []
   },
@@ -193,7 +124,7 @@ export const projectsContent = {
     date: "Apr 2025 - Sep 2025",
     year: 2025,
     tags: ["FIGMA", "MIRO", "MICROSOFT SUITE", "LOOKER STUDIO", "USER RESEARCH", "TEAM PROJECT", "UI/UX"],
-    categories: ["DESIGN", "DATA ANALYSIS", "PROGRAMMING"],
+    categories: ["DESIGN", "DATA ANALYSIS", "OTHER"],
     image: "/project_icons/teamviewer.png",
     brief: [
       "Working at TeamViewer (TV) in Göppingen, Germany, was a great experience to broaden both my horizons and experience working in a corporate setting, while developing my user research skills within the company.",
@@ -207,7 +138,7 @@ export const projectsContent = {
       ],
       [
         { src: "/projects/2025_TeamViewer/hero-dex-device-monitoring-tracking-overview.avif", alt: "Overview of the DEX dashboard", span: "1fr" },
-        { src: "/projects/2025_TeamViewer/hero-dex-device-monitoring-tracking-overview.avif", alt: "Overview of the DEX dashboard", span: "1fr" }
+        { src: "/projects/2025_TeamViewer/hero-teamviewer-dex-essentials-overview-alt.avif", alt: "Overview of the DEX dashboard", span: "1fr" }
       ]
     ],
     documentation: [
@@ -232,7 +163,7 @@ export const projectsContent = {
         { src: "/projects/2025_Cascados/Cover page - Juyeong.png", alt: "Cover page", span: "1fr" }
       ],
       [
-        { src: "/projects/2025_Cascados/Group12-FullVideo.mp4", alt: "Product video", span: "1fr" }
+        { src: "https://youtu.be/R7jv_CFRhV0", alt: "Cascados product video", span: "1fr" }
       ],
       [
         { src: "/projects/2025_Cascados/Full_Render.png", alt: "Render of the product", span: "1fr" },
@@ -240,8 +171,8 @@ export const projectsContent = {
       ]
     ],
     documentation: [
-      { name: "25_11_24_Cascados_Stage_1.pdf", link: "public/projects/2025_Cascados/25_11_24_Cascados_Stage_1.pdf" },
-      { name: "28_02_25_Cascados_Stage_2.pdf", link: "public/projects/2025_Cascados/28_02_25_Cascados_Stage_2.pdf" }
+      { name: "25_11_24_Cascados_Stage_1.pdf", link: "/projects/2025_Cascados/25_11_24_Cascados_Stage_1.pdf" },
+      { name: "28_02_25_Cascados_Stage_2.pdf", link: "/projects/2025_Cascados/28_02_25_Cascados_Stage_2.pdf" }
     ]
   },
 
@@ -249,7 +180,7 @@ export const projectsContent = {
     title: "Hydron",
     date: "Jan 2025 - Mar 2025",
     year: 2025,
-    tags: ["ONSHAPE", "BLENDER", "FIGMA", "3D PRINTING", "USER RESEARCH"],
+    tags: ["BLENDER", "FIGMA", "3D PRINTING", "USER RESEARCH", "RHINO 3D"],
     categories: ["CAD", "DESIGN", "PROTOTYPING", "OTHER"],
     image: "/project_icons/hydron.png",
     brief: [
@@ -278,7 +209,7 @@ export const projectsContent = {
     title: "Wirecast",
     date: "Jan 2025 - Mar 2025",
     year: 2025,
-    tags: ["FIGMA", "ADOBE SUITE", "USER RESEARCH", "UI/UX", "BUISNESS STRATEGY"],
+    tags: ["FIGMA", "ADOBE SUITE", "USER RESEARCH", "UI/UX"],
     categories: ["DESIGN", "OTHER"],
     image: "/project_icons/wirecast.png",
     brief: [
@@ -295,7 +226,7 @@ export const projectsContent = {
         { src: "/projects/2025_Wirecast/Day.png", alt: "Day view", span: "1fr", aspectRatio: "0.5" }
       ],
       [
-        { src: "/projects/2025_Wirecast/Plug Video.mp4", alt: "Wirecast Plug 3D model interaction", span: "1fr" }
+        { src: "https://youtu.be/VazpOoXiEZE", alt: "Wirecast Plug 3D model interaction", span: "1fr" }
       ]
     ],
     documentation: [
@@ -307,8 +238,8 @@ export const projectsContent = {
     title: "WORLD'S WORST INTRUDER ALARM",
     date: "Oct 2025 - Dec 2025",
     year: 2025,
-    tags: ["FIGMA", "PYTHON", "MATLAB", "MICROSOFT SUITE", "MANUFACTURE", "ELECTRONICS"],
-    categories: ["PROGRAMMING", "PROTOTYPING", "DATA ANALYSIS"],
+    tags: ["FIGMA", "PYTHON", "MATLAB", "MANUFACTURE", "ELECTRONICS"],
+    categories: ["DESIGN", "PROGRAMMING", "PROTOTYPING"],
     image: "/project_icons/sensing-and-iot.png",
     brief: [
       "For a project revolving around Sensing & Internet of Things, I decided to explore how temperature and humidity could be used to build the \u201cworld\u2019s worst intruder alarm system\u201d.",
@@ -331,7 +262,7 @@ export const projectsContent = {
     title: "Apollo Drones",
     date: "Oct 2024 - Dec 2024",
     year: 2024,
-    tags: ["ONSHAPE", "BLENDER", "FUSION 360", "FIGMA", "ADOBE SUITE", "PYTHON", "MICROSOFT SUITE", "USER RESEARCH", "TEAM PROJECT", "UI/UX", "BUISNESS STRATEGY"],
+    tags: ["ONSHAPE", "BLENDER", "FUSION 360", "FIGMA", "ADOBE SUITE", "PYTHON", "MICROSOFT SUITE", "USER RESEARCH", "TEAM PROJECT", "UI/UX", "BUSINESS STRATEGY"],
     categories: ["CAD", "DESIGN", "PROGRAMMING", "DATA ANALYSIS", "OTHER"],
     image: "/project_icons/apollo-drones.png",
     brief: [
@@ -361,7 +292,7 @@ export const projectsContent = {
     title: "Cuttleswish",
     date: "Jan 2024 - Jun 2024",
     year: 2024,
-    tags: ["ONSHAPE", "BLENDER", "FIGMA", "PYTHON", "3D PRINTING", "MANUFACTURE", "ELECTRONICS", "USER RESEARCH", "TEAM PROJECT", "UI/UX", "BUISNESS STRATEGY"],
+    tags: ["ONSHAPE", "BLENDER", "FIGMA", "PYTHON", "3D PRINTING", "MANUFACTURE", "ELECTRONICS", "USER RESEARCH", "TEAM PROJECT", "UI/UX", "BUSINESS STRATEGY"],
     categories: ["CAD", "DESIGN", "PROGRAMMING", "PROTOTYPING", "OTHER"],
     image: "/project_icons/cuttleswish.png",
     brief: [
@@ -378,7 +309,7 @@ export const projectsContent = {
         { src: "/projects/2024_IDE/ExplodedCyclesV2.png", alt: "Exploded View", span: "2fr" }
       ],
       [
-        { src: "/projects/2024_IDE/Cuttleswish-Video.mp4", alt: "Video of the product", span: "1fr" }
+        { src: "https://youtu.be/9-DIxQ-EqSA", alt: "Video of the product", span: "1fr" }
       ],
       [
         { src: "/projects/2024_IDE/Final Render_2.png", alt: "Render of the product", span: "1fr" }
@@ -396,7 +327,7 @@ export const projectsContent = {
     date: "Jan 2024 - Mar 2024",
     year: 2024,
     tags: ["ONSHAPE", "BLENDER", "FUSION 360", "SOLIDWORKS FS"],
-    categories: ["SIMULATION", "CAD", "DATA ANALYSIS"],
+    categories: ["CAD", "SIMULATION"],
     image: "/project_icons/aerodynamics-of-a-motorbike.png",
     brief: [
       "The aim within this project was to design a vehicle and test it’s aerodynamics using Solidworks FlowSimulator. For my inspiration of the design, I looked at two motorbikes whose designs I love: the Ducati Diavel, and the Arc Vector, and then introduced design aspects such as the unconventional front suspension and large intakes into my design. I also introduced a much more angular and aggressive shape into the design to accentuate what I like about motorbikes.",
@@ -407,8 +338,8 @@ export const projectsContent = {
         { src: "/projects/2024_AERO/RenderCoverPage.png", alt: "Motorbike Cover Page", span: "1fr" }
       ],
       [
-        { src: "/projects/2024_AERO/2D Velocity Plot.png", alt: "Motorbike 2D Velocity Plot", span: "1fr" },
-        { src: "/projects/2024_AERO/FlowArrows.png", alt: "Motorbike Flow Arrows", span: "2fr" }
+        { src: "/projects/2024_AERO/2D Velocity Plot.PNG", alt: "Motorbike 2D Velocity Plot", span: "1fr" },
+        { src: "/projects/2024_AERO/FlowArrows.PNG", alt: "Motorbike Flow Arrows", span: "2fr" }
       ],
     ],
     documentation: [
@@ -422,7 +353,7 @@ export const projectsContent = {
     date: "Jan 2023 - Apr 2023",
     year: 2023,
     tags: ["ONSHAPE", "BLENDER", "ANSYS"],
-    categories: ["SIMULATION", "CAD", "DATA ANALYSIS"],
+    categories: ["CAD", "SIMULATION"],
     image: "/project_icons/fea-of-a-hip-implant.png",
     brief: [
       "This Finite Element Analysis (FEA) project focused on solving a structural challenge in biomedical engineering: the premature failure of hip implants.",
@@ -450,8 +381,8 @@ export const projectsContent = {
     title: "MYCOEDGE",
     date: "Jan 2023 - Apr 2023",
     year: 2023,
-    tags: ["ONSHAPE", "BLENDER", "ANSYS"],
-    categories: ["CAD", "DESIGN", "PROTOTYPING"],
+    tags: ["ONSHAPE", "BLENDER", "FIGMA", "MIRO", "CES EDUPACK", "USER RESEARCH", "TEAM PROJECT", "BUSINESS STRATEGY"],
+    categories: ["CAD", "DESIGN", "SIMULATION", "OTHER"],
     image: "/project_icons/mycoedge.png",
     brief: [
       "MycoEdge was a razor designed to tackle all aspects of sustainability throughout it's lifecycle and reduce its environmental impact.",
@@ -483,7 +414,7 @@ export const projectsContent = {
     date: "Jan 2023 - Jun 2023",
     year: 2023,
     tags: ["FIGMA", "MANUFACTURE", "USER RESEARCH", "TEAM PROJECT", "UI/UX"],
-    categories: ["DESIGN", "PROGRAMMING", "DATA ANALYSIS"],
+    categories: ["DESIGN", "PROTOTYPING", "OTHER"],
     image: "/project_icons/sentire.png",
     brief: [
       "HCDE (Human Centered Design Engineering) was a project focused on dealing with waste along canals in London.",
@@ -517,7 +448,7 @@ export const projectsContent = {
     date: "Oct 2021 - Apr 2022",
     year: 2022,
     tags: ["ONSHAPE", "BLENDER", "MICROSOFT SUITE", "3D PRINTING", "MANUFACTURE", "USER RESEARCH"],
-    categories: ["CAD", "DESIGN", "PROTOTYPING"],
+    categories: ["CAD", "DATA ANALYSIS", "PROTOTYPING", "OTHER"],
     image: "/project_icons/a-level-nea.png",
     brief: [
       "My A-Level project set out to solve a fundamental problem for anyone who wants to use A3 drawing boards daily: the complete lack of portability.",
@@ -552,8 +483,8 @@ export const projectsContent = {
     title: "Walker",
     date: "Jan 2022 - Apr 2022",
     year: 2022,
-    tags: ["ONSHAPE", "PYTHON", "MANUFACTURE", "ELECTRONICS"],
-    categories: ["CAD", "PROTOTYPING", "PROGRAMMING"],
+    tags: ["ONSHAPE", "PYTHON", "ELECTRONICS", "3D PRINTING"],
+    categories: ["CAD", "PROGRAMMING", "PROTOTYPING"],
     image: "/project_icons/walker.png",
     brief: [
       "This was a self-led project for me to experiment on building a 4 legged robot walker which could be powered, through a series of cams and mechanisms, with only 2 servo motors per leg for both pitch, tilt and yaw, and controlled with a Raspberry Pi. The whole contraption would be 3D printed and assembled by myself at home.",
@@ -579,8 +510,8 @@ export const projectsContent = {
     title: "GCSE NEA",
     date: "Oct 2019 - Apr 2020",
     year: 2020,
-    tags: ["ONSHAPE", "PYTHON", "MICROSOFT SUITE", "MANUFACTURE", "ELECTRONICS", "USER RESEARCH"],
-    categories: ["CAD", "PROTOTYPING", "PROGRAMMING", "OTHER"],
+    tags: ["ONSHAPE", "PYTHON", "MICROSOFT SUITE", "MANUFACTURE", "ELECTRONICS", "USER RESEARCH", "3D PRINTING"],
+    categories: ["CAD", "PROGRAMMING", "DATA ANALYSIS", "PROTOTYPING", "OTHER"],
     image: "/project_icons/gcse-nea.png",
     brief: [
       "The aim of this project was to create a product that would help you practice sports. In my case, I choose to create a product for Dodgeball.",
@@ -593,13 +524,13 @@ export const projectsContent = {
         { src: "/projects/2020_GCSE_NEA/GCSE_ScreenView.png", alt: "View of the screen showcasing the ball being detected", span: "1fr" }
       ],
       [
-        { src: "/projects/2020_GCSE_NEA/GCSE_ActionVideo.mp4", alt: "Video showcasing the product in action", span: "1fr" }
+        { src: "https://youtu.be/uHXeXNce6Po", alt: "Video showcasing the product in action", span: "1fr" }
       ],
       [
         { src: "/projects/2020_GCSE_NEA/GCSE_TopView.png", alt: "Top view of the prototype", span: "1fr" }
       ],
       [
-        { src: "/projects/2020_GCSE_NEA/GCSE_ScreenRecording.mp4", alt: "Video showcasing the code working", span: "1fr" }
+        { src: "https://youtu.be/n5HKe4HXVTk", alt: "Video showcasing the code working", span: "1fr" }
       ]
     ],
     documentation: []
@@ -610,7 +541,7 @@ export const projectsContent = {
     date: "Jun 2020",
     year: 2020,
     tags: ["ONSHAPE"],
-    categories: ["CAD", "SIMULATION", "PROTOTYPING"],
+    categories: ["CAD"],
     image: "/project_icons/nasa-vesuvius-challenge.png",
     brief: [
       "Hosted on HeroX, Nasa had run a challenge called Exploring Hell: Avoiding Obstacles on a Clockwork Rover. The solution the innovators had to find was an innovative obstacle avoidance sensor for Nasa\u2019s mechanical clockwork rover.",
@@ -624,22 +555,13 @@ export const projectsContent = {
         { src: "/projects/2020_NASA_Vesuvius_Challenge/NASA_FullDesign.png", alt: "NASA Venus Rover Sensor Arm Mechanism", span: "1fr" }
       ],
       [
-        { src: "/projects/2020_NASA_Vesuvius_Challenge/NASA_Mechanism1.png", alt: "Gear Differential Close-up", span: "1fr" },
-        { src: "/projects/2020_NASA_Vesuvius_Challenge/NASA_Mechanism2.png", alt: "Rover Body Frame Assembly", span: "2fr" },
+        { src: "/projects/2020_NASA_Vesuvius_Challenge/Nasa_Mechanism1.png", alt: "Gear Differential Close-up", span: "1fr" },
+        { src: "/projects/2020_NASA_Vesuvius_Challenge/Nasa_Mechanism2.png", alt: "Rover Body Frame Assembly", span: "2fr" },
       ],
       [
-        { src: "/projects/2020_NASA_Vesuvius_Challenge/NASA_Sifter.png", alt: "Cylindrical Mesh Lattice with Propeller", span: "1fr" }
+        { src: "/projects/2020_NASA_Vesuvius_Challenge/Nasa_Sifter.png", alt: "Cylindrical Mesh Lattice with Propeller", span: "1fr" }
       ]
     ],
     documentation: []
   }
 };
-
-// Aliases for alternate route slugs
-projectsContent["fea-hip-implant"] = projectsContent["fea-of-a-hip-implant"];
-projectsContent["nasa-vesuvius"] = projectsContent["nasa-vesuvius-challenge"];
-projectsContent["apollo"] = projectsContent["apollo-drones"];
-projectsContent["siot"] = projectsContent["sensing-and-iot"];
-projectsContent["optimisation"] = projectsContent["aerodynamics-of-a-motorbike"];
-projectsContent["hcde"] = projectsContent["sentire"];
-projectsContent["ero"] = projectsContent["cascados"];

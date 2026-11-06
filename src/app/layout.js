@@ -9,7 +9,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "DESIGN TEST BUILD | Francesco Rastelli",
+  title: "DESIGN BUILD TEST | Francesco Rastelli",
   description: "2026 Portfolio of Francesco Rastelli",
 };
 

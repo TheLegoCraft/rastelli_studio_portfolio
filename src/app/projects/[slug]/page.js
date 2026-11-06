@@ -1,5 +1,6 @@
 import { projectsContent } from '@/lib/projectsContent';
 import Link from 'next/link';
+import { ProjectBrief, ProjectPhotobooth } from '@/components/ProjectContent';
 
 export default async function ProjectPage({ params }) {
   const { slug } = await params;
@@ -118,34 +119,7 @@ export default async function ProjectPage({ params }) {
         >
           Project Brief
         </h3>
-        {project.brief.map((paragraph, idx) => (
-          <p
-            key={idx}
-            style={{
-              fontFamily: 'var(--font-jetbrains-mono), monospace',
-              marginBottom: '1.4rem',
-              lineHeight: '1.65',
-              color: '#E5E5E5',
-              fontSize: '1rem',
-              letterSpacing: '0.01em',
-            }}
-          >
-            {paragraph.startsWith('http') ? (
-              <a
-                href={paragraph}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  color: 'var(--secondary-color)',
-                  textDecoration: 'underline',
-                  wordBreak: 'break-all',
-                }}
-              >
-                {paragraph}
-              </a>
-            ) : paragraph}
-          </p>
-        ))}
+        <ProjectBrief paragraphs={project.brief} />
       </section>
 
       {/* Photobooth */}
@@ -166,120 +140,7 @@ export default async function ProjectPage({ params }) {
             Photobooth
           </h3>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-            {project.photobooth.map((row, rowIdx) => {
-              const gridCols = row
-                .map(col => {
-                  if (typeof col === 'string') return col.startsWith('/') ? '1fr' : col;
-                  return col.span || '1fr';
-                })
-                .join(' ');
-
-              return (
-                <div
-                  key={rowIdx}
-                  style={{
-                    display: 'grid',
-                    gridTemplateColumns: gridCols,
-                    gap: '1.25rem',
-                    alignItems: 'stretch',
-                  }}
-                >
-                  {row.map((item, colIdx) => {
-                    const isObj = typeof item === 'object' && item !== null;
-                    const src = isObj ? item.src : (typeof item === 'string' && item.startsWith('/') ? item : null);
-                    const isVideo = isObj && (item.type === 'video' || (src && /\.(mp4|mov|webm|m4v)$/i.test(src)));
-                    const isImage = src && !isVideo;
-
-                    if (isVideo) {
-                      return (
-                        <div
-                          key={colIdx}
-                          style={{
-                            width: '100%',
-                            borderRadius: '6px',
-                            overflow: 'hidden',
-                            backgroundColor: '#0a0a0a',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                          }}
-                        >
-                          <video
-                            src={src}
-                            controls
-                            playsInline
-                            preload="metadata"
-                            style={{
-                              width: '100%',
-                              height: '100%',
-                              maxHeight: '650px',
-                              display: 'block',
-                              borderRadius: '10px',
-                              backgroundColor: '#000',
-                            }}
-                          />
-                        </div>
-                      );
-                    }
-
-                    if (isImage) {
-                      return (
-                        <div
-                          key={colIdx}
-                          style={{
-                            width: '100%',
-                            borderRadius: '10px',
-                            overflow: 'hidden',
-                            backgroundColor: item.bg || 'transparent',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            ...(item.aspectRatio ? { aspectRatio: item.aspectRatio } : {}),
-                          }}
-                        >
-                          <img
-                            src={src}
-                            alt={item.alt || project.title}
-                            style={{
-                              width: '100%',
-                              height: '100%',
-                              maxHeight: item.maxHeight || (row.length === 1 ? '750px' : undefined),
-                              objectFit: item.objectFit || 'cover',
-                              objectPosition: item.objectPosition || 'center',
-                              display: 'block',
-                              borderRadius: '6px',
-                            }}
-                          />
-                        </div>
-                      );
-                    }
-
-                    // Fallback / placeholder
-                    return (
-                      <div
-                        key={colIdx}
-                        style={{
-                          backgroundColor: '#161616',
-                          borderRadius: '6px',
-                          minHeight: row.length === 1 ? '380px' : '280px',
-                          width: '100%',
-                          border: '1px solid #2a2a2a',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                        }}
-                      >
-                        <span style={{ color: '#444444', fontFamily: 'var(--font-jetbrains-mono), monospace', fontSize: '0.85rem', letterSpacing: '0.1em' }}>
-                          {isObj && item.text ? item.text : 'PHOTOBOOTH ASSET'}
-                        </span>
-                      </div>
-                    );
-                  })}
-                </div>
-              );
-            })}
-          </div>
+          <ProjectPhotobooth rows={project.photobooth} fallbackAlt={project.title} />
         </section>
       )}
 
@@ -322,12 +183,6 @@ export default async function ProjectPage({ params }) {
               </a>
             ))}
           </div>
-          <style>{`
-            .doc-link:hover {
-              color: var(--secondary-color) !important;
-              text-decoration: underline !important;
-            }
-          `}</style>
         </section>
       )}
     </main>

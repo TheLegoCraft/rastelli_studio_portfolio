@@ -1,17 +1,6 @@
-"use client";
-
-import { useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 export default function BackgroundVideo() {
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      // Force play on mount to bypass some browser autoplay restrictions
-      videoRef.current.play().catch(err => console.error("Video autoplay failed:", err));
-    }
-  }, []);
-
   return (
     <div
       style={{
@@ -25,20 +14,14 @@ export default function BackgroundVideo() {
         pointerEvents: 'none',
       }}
     >
-      <video
-        ref={videoRef}
-        autoPlay
-        loop
-        muted
-        playsInline
-        style={{
-          width: '100%',
-          height: '100%',
-          objectFit: 'cover',
-        }}
-      >
-        <source src="/BackgroundVideoPortfolioInversed.mp4" type="video/mp4" />
-      </video>
+      {/* Loops forever via the GIF's own loop setting; unoptimized keeps it animated */}
+      <Image
+        src="/BackgroundVideoPortfolioInversed.gif"
+        alt=""
+        fill
+        unoptimized
+        style={{ objectFit: 'cover' }}
+      />
     </div>
   );
 }

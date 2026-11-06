@@ -1,4 +1,5 @@
-import AboutHighlightsSection from "@/components/AboutHighlightsSection";
+import HomeWheel from "@/components/HomeWheel";
+import { wheelStops } from "@/lib/wheelStops";
 
 export default function Home() {
   return (
@@ -29,8 +30,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Combined About & Highlights Section */}
-      <AboutHighlightsSection />
+      <HomeWheel stops={wheelStops} />
 
     </main>
   );

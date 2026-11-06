@@ -3,6 +3,16 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
+const NAV_ITEMS = [
+  { text: 'ABOUT (00)', link: '/', bgColor: '#ACE8FA' },
+  { text: 'CV (01)', link: '/cv', bgColor: '#89DEFA' },
+  { text: 'WORK (02)', link: '/work', bgColor: '#6ED5F9' },
+  { text: 'HOBBIES (03)', link: '/hobbies', bgColor: '#5DCCFA' },
+  // Darker text keeps this row at 3:1 contrast on its darker background
+  { text: 'CONTACT (04)', link: '/contact', bgColor: '#4AA2C7', textColor: '#245062' },
+];
+const NAV_TEXT_COLOR = '#275364';
+
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -28,10 +38,11 @@ export default function Navigation() {
           fontWeight: 'bold',
           fontSize: '1.5rem',
           letterSpacing: '0.05em',
-          transition: 'color 0.3s',
-          pointerEvents: 'auto', // Re-enable pointer events for the link
+          transition: 'color 0.3s, opacity 0.3s',
+          opacity: isOpen ? 0 : 1, // The menu covers the page, logo included
+          pointerEvents: isOpen ? 'none' : 'auto', // Re-enable pointer events for the link
         }}>
-          franslife
+          rastelli.studio
         </Link>
 
         {/* Hamburger Menu Button */}
@@ -49,9 +60,9 @@ export default function Navigation() {
           }}
           aria-label="Toggle Navigation"
         >
-          <div style={{ width: '30px', height: '3px', backgroundColor: 'var(--secondary-color)', transition: '0.3s ease', transform: isOpen ? 'rotate(45deg) translate(6px, 6.5px)' : 'none' }} />
-          <div style={{ width: '30px', height: '3px', backgroundColor: 'var(--secondary-color)', transition: '0.3s ease', opacity: isOpen ? 0 : 1 }} />
-          <div style={{ width: '30px', height: '3px', backgroundColor: 'var(--secondary-color)', transition: '0.3s ease', transform: isOpen ? 'rotate(-45deg) translate(6px, -6.5px)' : 'none' }} />
+          <div style={{ width: '30px', height: '3px', backgroundColor: isOpen ? NAV_TEXT_COLOR : 'var(--secondary-color)', transition: '0.3s ease', transform: isOpen ? 'rotate(45deg) translate(6px, 6.5px)' : 'none' }} />
+          <div style={{ width: '30px', height: '3px', backgroundColor: isOpen ? NAV_TEXT_COLOR : 'var(--secondary-color)', transition: '0.3s ease', opacity: isOpen ? 0 : 1 }} />
+          <div style={{ width: '30px', height: '3px', backgroundColor: isOpen ? NAV_TEXT_COLOR : 'var(--secondary-color)', transition: '0.3s ease', transform: isOpen ? 'rotate(-45deg) translate(6px, -6.5px)' : 'none' }} />
         </button>
       </header>
 
@@ -62,17 +73,17 @@ export default function Navigation() {
           top: 0,
           right: isOpen ? 0 : '-100%',
           width: '100%',
-          maxWidth: '400px', // Adjusted to look like the design overlapping panels
-          height: '100vh',
+          height: '100dvh',
           zIndex: 90,
           transition: 'right 0.6s cubic-bezier(0.77, 0, 0.175, 1)',
           display: 'flex',
+          flexDirection: 'column',
           boxShadow: isOpen ? '-10px 0 30px rgba(0,0,0,0.5)' : 'none',
         }}
       >
-        <NavPanel text="CV (01)" bgColor="#9EEAFD" textColor="#0A4259" link="/cv" onClick={() => setIsOpen(false)} />
-        <NavPanel text="WORK (02)" bgColor="#3FD8FE" textColor="#0A4259" link="/work" onClick={() => setIsOpen(false)} />
-        <NavPanel text="CONTACT (03)" bgColor="#0EA6CD" textColor="#0A4259" link="/contact" onClick={() => setIsOpen(false)} />
+        {NAV_ITEMS.map(item => (
+          <NavPanel key={item.link} textColor={NAV_TEXT_COLOR} {...item} onClick={() => setIsOpen(false)} />
+        ))}
       </div>
     </>
   );
@@ -83,24 +94,15 @@ function NavPanel({ text, bgColor, textColor, link, onClick }) {
     <Link href={link} onClick={onClick} style={{
       flex: 1,
       display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'flex-end',
       alignItems: 'center',
-      paddingBottom: '2rem',
+      paddingLeft: '2rem',
       backgroundColor: bgColor,
       textDecoration: 'none',
       color: textColor,
-      transition: 'flex 0.3s',
-      position: 'relative',
-      borderLeft: '1px solid rgba(0,0,0,0.05)',
-      overflow: 'hidden'
     }}>
       <div style={{
-        writingMode: 'vertical-rl',
-        transform: 'rotate(180deg)',
         whiteSpace: 'nowrap',
-        fontSize: '5rem', // Massively increased to fill the width of the menu boxes
-        lineHeight: 0.8,
+        fontSize: 'clamp(1.75rem, min(10vw, 11vh), 6rem)',
         fontWeight: 'bold',
         textTransform: 'uppercase',
         letterSpacing: '0.05em'

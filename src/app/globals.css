@@ -4,15 +4,7 @@
   --primary-color: #FF4A1C; /* Orange from design */
   --secondary-color: #2BD5FF; /* Cyan from design */
   
-  --grey-100: #F5F5F5;
-  --grey-200: #E0E0E0;
-  --grey-300: #BDBDBD;
   --grey-400: #9E9E9E;
-  --grey-500: #757575;
-  --grey-600: #616161;
-  --grey-700: #424242;
-  --grey-800: #212121;
-  --grey-900: #121212;
 }
 
 html, body {
@@ -57,10 +49,6 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-.heading-1 {
-  font-size: 2rem;
-}
-
 .heading-2 {
   font-size: 1.5rem;
 }
@@ -68,4 +56,14 @@ h1, h2, h3, h4, h5, h6 {
 .body-main {
   font-size: 1rem;
   line-height: 1.5;
+}
+
+/* Links in the Documentation sections */
+.doc-link {
+  transition: color 0.2s ease;
+}
+
+.doc-link:hover {
+  color: var(--secondary-color) !important;
+  text-decoration: underline !important;
 }
