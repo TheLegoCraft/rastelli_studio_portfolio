@@ -210,34 +210,7 @@ export default function WorkGrid({ categoriesBySlug }) {
   const years = Object.keys(groupedProjects).sort((a, b) => b - a);
 
   return (
-    <main
-      style={{
-        minHeight: '100vh',
-        padding: '100px 5% 120px 5%',
-        maxWidth: '1000px',
-        margin: '0 auto',
-        position: 'relative',
-        zIndex: 10,
-      }}
-    >
-      {/* Title */}
-      <div style={{ marginBottom: '1.75rem' }}>
-        <h1
-          style={{
-            color: 'var(--primary-color)',
-            fontFamily: 'var(--font-jetbrains-mono), monospace',
-            fontSize: 'clamp(2.5rem, 5vw, 4rem)',
-            fontWeight: 700,
-            letterSpacing: '0.04em',
-            textTransform: 'uppercase',
-            margin: 0,
-            lineHeight: 1.1,
-          }}
-        >
-          WORK &nbsp;(02)
-        </h1>
-      </div>
-
+    <div>
       {/* Filter Tags */}
       <div
         style={{
@@ -323,6 +296,6 @@ export default function WorkGrid({ categoriesBySlug }) {
           );
         })
       )}
-    </main>
+    </div>
   );
 }

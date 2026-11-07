@@ -7,5 +7,12 @@ const categoriesBySlug = Object.fromEntries(
 );
 
 export default function WorkPage() {
-  return <WorkGrid categoriesBySlug={categoriesBySlug} />;
+  return (
+    <main className="main-page-area">
+      <h1 className='title-large text-primary'>
+        WORK (02)
+      </h1>
+      <WorkGrid categoriesBySlug={categoriesBySlug} />
+    </main>
+  );
 }
