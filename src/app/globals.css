@@ -68,6 +68,34 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: underline !important;
 }
 
+/* Home wheel panel: dims the image and shows a label. Only on devices that can really hover,
+   so a tap doesn't leave it stuck on */
+.stop-panel-hint {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* At 0.75 even a pure white image gives the orange 3.1:1, the WCAG AA minimum for large text.
+     The 1.2rem floor keeps the bold label large text (18.66px+) at every width */
+  background-color: rgba(0, 0, 0, 0.75);
+  color: var(--primary-color);
+  font-size: clamp(1.2rem, 1.6vw, 1.5rem);
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+a:focus-visible > .stop-panel-hint {
+  opacity: 1;
+}
+
+@media (hover: hover) {
+  .stop-panel:hover .stop-panel-hint {
+    opacity: 1;
+  }
+}
+
 .site-header {
   padding: 2rem;
 }

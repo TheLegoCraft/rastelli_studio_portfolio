@@ -2,8 +2,9 @@ import { projectsContent } from '@/lib/projectsContent';
 import Link from 'next/link';
 import { ProjectBrief, ProjectPhotobooth } from '@/components/ProjectContent';
 
-export default async function ProjectPage({ params }) {
+export default async function ProjectPage({ params, searchParams }) {
   const { slug } = await params;
+  const { from } = await searchParams;
   const normalizedSlug = slug?.toLowerCase();
   const project = projectsContent[slug] || projectsContent[normalizedSlug];
 
@@ -19,6 +20,9 @@ export default async function ProjectPage({ params }) {
     );
   }
 
+  // The home wheel marks its links, so the button can go back to the tile the visitor came from
+  const fromHighlights = from === 'highlights';
+
   return (
     <main
       style={{
@@ -33,7 +37,7 @@ export default async function ProjectPage({ params }) {
       {/* Back Button */}
       <div style={{ marginBottom: '2.5rem' }}>
         <Link
-          href="/work"
+          href={fromHighlights ? `/#highlight-${normalizedSlug}` : '/work'}
           style={{
             display: 'inline-flex',
             alignItems: 'center',
@@ -46,7 +50,7 @@ export default async function ProjectPage({ params }) {
             letterSpacing: '0.05em',
           }}
         >
-          ← BACK TO WORK
+          {fromHighlights ? '← BACK TO THE HIGHLIGHTS' : '← BACK TO WORK'}
         </Link>
       </div>
 

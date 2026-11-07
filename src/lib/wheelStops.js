@@ -9,9 +9,11 @@ function projectStop(title, slug, overrides = {}) {
 
   return {
     title,
-    href: `/projects/${slug}`,
+    href: `/projects/${slug}?from=highlights`,
+    anchor: `highlight-${slug}`,
     tileImage: `/project_icons/${slug}.png`,
     image: firstImage(project),
+    hoverLabel: 'See the project →',
     ...overrides,
   };
 }
@@ -33,10 +35,28 @@ export const wheelStops = [
           A designer for the future.
         </p>
         <p style={{ margin: 0 }}>
-          My creativity is fuelled by a love for design, cooking, art and sport. Keep scrolling for some of my favourite projects, with all of my work at the end. Enjoy!
+          My creativity is fuelled by a love for design, cooking, art and sport. Keep scrolling for my CV, all of my work and some of my favourite projects. Enjoy!
         </p>
       </>
     ),
+  },
+  {
+    title: 'CV',
+    href: '/cv',
+    tileImage: '/project_icons/cv.png',
+    image: '/project_icons/cv.png',
+    imagePosition: 'top',
+    body: 'My education, experience and skills.',
+    linkLabel: 'View my CV →',
+  },
+  {
+    title: 'See all my work',
+    href: '/work',
+    tileImage: '/project_icons/work-tile.webp',
+    image: '/project_icons/work.webp',
+    imagePosition: 'top',
+    body: 'Every project, from CAD and prototyping to programming and data analysis.',
+    linkLabel: 'Go to Work →',
   },
   projectStop('TeamViewer', 'teamviewer', {
     body: "At TeamViewer in Germany, I was one of four UX Researchers, helping designers and product managers find answers through interviews and data. It was a big step forward for my research skills.",
@@ -62,6 +82,7 @@ export const wheelStops = [
     href: '/hobbies',
     tileImage: '/project_icons/photography-and-hobbies.png',
     image: '/projects/Ongoing_PersonalWork/image_1.JPG',
+    hoverLabel: 'See my hobbies →',
     body: "Backpacking, film photography, waterpolo and cooking: a look at the less professional side of me.",
   },
   projectStop('Portfolio Design', 'designing-and-building-the-portfolio', {
@@ -71,22 +92,4 @@ export const wheelStops = [
   projectStop('Apollo Drones', 'apollo-drones', {
     body: "Apollo Drones aims to help Search and Rescue teams with a critical problem: how do you cover a large area quickly enough to save someone's life?",
   }),
-  {
-    title: 'CV',
-    href: '/cv',
-    tileImage: '/project_icons/cv.png',
-    image: '/project_icons/cv.png',
-    imagePosition: 'top',
-    body: 'My education, experience and skills.',
-    linkLabel: 'View my CV →',
-  },
-  {
-    title: 'See all my work',
-    href: '/work',
-    tileImage: '/project_icons/work-tile.webp',
-    image: '/project_icons/work.webp',
-    imagePosition: 'top',
-    body: 'Every project, from CAD and prototyping to programming and data analysis.',
-    linkLabel: 'Go to Work →',
-  },
 ];

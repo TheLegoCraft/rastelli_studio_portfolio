@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 const NAV_ITEMS = [
-  { text: 'ABOUT (00)', link: '/', bgColor: '#ACE8FA' },
+  { text: 'ABOUT (00)', link: '/#about', bgColor: '#ACE8FA' },
   { text: 'CV (01)', link: '/cv', bgColor: '#89DEFA' },
   { text: 'WORK (02)', link: '/work', bgColor: '#6ED5F9' },
   { text: 'HOBBIES (03)', link: '/hobbies', bgColor: '#5DCCFA' },
@@ -12,6 +12,13 @@ const NAV_ITEMS = [
   { text: 'CONTACT (04)', link: '/contact', bgColor: '#4AA2C7', textColor: '#245062' },
 ];
 const NAV_TEXT_COLOR = '#275364';
+
+// Clicking a hash link for the URL already showing doesn't scroll, so after the visitor has
+// scrolled away from the anchor it has to be done by hand
+function scrollToHash(link) {
+  const [path, hash] = link.split('#');
+  if (hash && window.location.pathname === path) document.getElementById(hash)?.scrollIntoView();
+}
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -82,7 +89,15 @@ export default function Navigation() {
         }}
       >
         {NAV_ITEMS.map(item => (
-          <NavPanel key={item.link} textColor={NAV_TEXT_COLOR} {...item} onClick={() => setIsOpen(false)} />
+          <NavPanel
+            key={item.link}
+            textColor={NAV_TEXT_COLOR}
+            {...item}
+            onClick={() => {
+              setIsOpen(false);
+              scrollToHash(item.link);
+            }}
+          />
         ))}
       </div>
     </>

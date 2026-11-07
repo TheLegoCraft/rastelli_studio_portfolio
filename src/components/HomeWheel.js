@@ -15,7 +15,7 @@ const WHEEL_VISIBLE_SHARE = 0.34;
 const PANEL_BOTTOM = 'calc(38dvh + 0.75rem)';
 const SCROLL_PER_STOP = '70vh';
 // Extra scroll on About me before the wheel starts turning, as a share of the screen height
-const START_HOLD = 1.2;
+const START_HOLD = 0.6;
 
 // Same result as the /work grid: repeat(auto-fill, minmax(200px, 1fr)), 1.25rem gap,
 // inside a 1000px max-width page with 5% side padding
@@ -104,9 +104,19 @@ export default function HomeWheel({ stops }) {
   return (
     <section
       ref={sectionRef}
+      id="about"
       aria-label="Selected work"
       style={{ '--wheel-tile': '272px', height: `calc(100dvh + ${START_HOLD * 100}vh + ${stops.length - 1} * ${SCROLL_PER_STOP})`, width: '100%', position: 'relative' }}
     >
+      {/* Invisible anchors at each stop's scroll position, so a project page can link back to it */}
+      {stops.map((stop, index) => stop.anchor && (
+        <div
+          key={stop.anchor}
+          id={stop.anchor}
+          style={{ position: 'absolute', top: `calc(${START_HOLD * 100}vh + ${index} * ${SCROLL_PER_STOP})` }}
+        />
+      ))}
+
       <div style={{ position: 'sticky', top: 0, height: '100dvh', overflow: 'hidden' }}>
 
         {/* Highlighted stop */}
@@ -172,6 +182,7 @@ export default function HomeWheel({ stops }) {
 function StopPanel({ stop, isActive, isFirst }) {
   return (
     <article
+      className="stop-panel"
       aria-hidden={!isActive}
       inert={!isActive}
       style={{
@@ -199,15 +210,18 @@ function StopPanel({ stop, isActive, isFirst }) {
             style={{ objectFit: 'cover', objectPosition: stop.imagePosition || 'center' }}
           />
         )}
+        {stop.hoverLabel && <span className="stop-panel-hint">{stop.hoverLabel}</span>}
       </Link>
 
-      {/* Text overlaid on the image, on a dark band */}
+      {/* Text overlaid on the image, on a dark band. With a hover hint the band lets clicks
+          through to the link underneath, so the whole panel opens the project */}
       <div
         style={{
           position: 'absolute',
           left: 0,
           right: 0,
           bottom: 0,
+          pointerEvents: stop.hoverLabel ? 'none' : 'auto',
           padding: '0.8rem 1.25rem',
           backgroundColor: TILE_BAR_COLOR,
           color: '#ffffff',

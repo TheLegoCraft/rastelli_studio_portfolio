@@ -344,7 +344,7 @@ export const projectsContent = {
     brief: [
       "I designed a vehicle and tested its aerodynamics in SolidWorks Flow Simulation.",
       "The design drew on two motorbikes I love, the Ducati Diavel and the Arc Vector, with their unconventional front suspension and large intakes, plus a more angular, aggressive shape.",
-      "Unlike a car, a motorbike's simulation has to include the rider, so I learnt to use mannequins in Blender to model their drag. This was harder than I expected. SolidWorks wouldn't accept the geometry due to surface issues until I did some \"wizard-y\" in Onshape to re-create the body as a solid object.",
+      "Unlike a car, a motorbike's simulation has to include the rider, so I learnt to use mannequins in Blender to model their drag. This was harder than I expected. SolidWorks wouldn't accept the geometry due to surface issues until I did some \"wizard-ry\" in Onshape to re-create the body as a solid object.",
       "The results of these tests were then used to improve the design of the motorbike."
     ],
     photobooth: [
