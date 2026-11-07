@@ -2,8 +2,8 @@ import { CONTACT_METHODS } from '@/lib/contactMethods';
 
 export default function ContactPage() {
   return (
-    <main style={{ minHeight: '100vh', padding: '100px 5%', maxWidth: '1000px', margin: '0 auto', position: 'relative', zIndex: 10 }}>
-      <h1 className="title-large text-primary" style={{ marginBottom: '2rem', fontWeight: 700 }}>CONTACT (04)</h1>
+    <main className="main-page-area">
+      <h1 className="title-large text-primary">CONTACT (04)</h1>
 
       <p className="body-main" style={{ marginBottom: '3rem' }}>The best way to reach me is through email or phone, although LinkedIn messages are also welcome.</p>
 

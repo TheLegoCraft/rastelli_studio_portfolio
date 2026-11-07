@@ -2,10 +2,10 @@ import { CONTACT_METHODS } from '@/lib/contactMethods';
 
 export default function CVPage() {
   return (
-    <main style={{ minHeight: '100vh', padding: '100px 5%', maxWidth: '1000px', margin: '0 auto', position: 'relative', zIndex: 10 }}>
+    <main className="main-page-area">
 
       {/* Header */}
-      <h1 className="title-large text-primary" style={{ marginBottom: '2rem', fontWeight: 700 }}>CV (01)</h1>
+      <h1 className="title-large text-primary">CV (01)</h1>
 
       <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '4rem', flexWrap: 'wrap', gap: '1rem' }}>
         <p className="body-main">Francesco Rastelli</p>

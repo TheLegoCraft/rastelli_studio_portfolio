@@ -3,30 +3,8 @@ import { ProjectBrief, ProjectPhotobooth } from '@/components/ProjectContent';
 
 export default function HobbiesPage() {
   return (
-    <main
-      style={{
-        minHeight: '100vh',
-        padding: '120px 5% 100px 5%',
-        maxWidth: '1000px',
-        margin: '0 auto',
-        position: 'relative',
-        zIndex: 10,
-      }}
-    >
-      <h1
-        style={{
-          color: 'var(--primary-color)',
-          fontFamily: 'var(--font-jetbrains-mono), monospace',
-          fontSize: 'clamp(2.4rem, 5vw, 4rem)',
-          fontWeight: 700,
-          lineHeight: 1.05,
-          letterSpacing: '0.01em',
-          textTransform: 'uppercase',
-          margin: '0 0 3rem 0',
-        }}
-      >
-        Hobbies (03)
-      </h1>
+    <main className="main-page-area">
+      <h1 className="title-large text-primary">Hobbies (03)</h1>
 
       <ProjectBrief paragraphs={[hobbiesIntro]} />
 

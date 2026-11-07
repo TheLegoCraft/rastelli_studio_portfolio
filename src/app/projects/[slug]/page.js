@@ -10,8 +10,8 @@ export default async function ProjectPage({ params, searchParams }) {
 
   if (!project) {
     return (
-      <main style={{ minHeight: '100vh', padding: '120px 5%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', position: 'relative', zIndex: 10 }}>
-        <h1 className="title-large text-primary" style={{ marginBottom: '1rem' }}>Project Not Found</h1>
+      <main className="main-page-area" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
+        <h1 className="title-large text-primary">Project Not Found</h1>
         <p className="body-main" style={{ color: 'var(--grey-400)', marginBottom: '2rem' }}>
           Sorry, the project &ldquo;{slug}&rdquo; doesn&apos;t have a dedicated page yet.
         </p>
