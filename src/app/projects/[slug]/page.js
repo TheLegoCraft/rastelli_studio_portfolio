@@ -20,7 +20,7 @@ export default async function ProjectPage({ params, searchParams }) {
     );
   }
 
-  // The home wheel marks its links, so the button can go back to the tile the visitor came from
+  // The home page Highlights mark their links, so the button can go back to the card the visitor came from
   const fromHighlights = from === 'highlights';
 
   return (

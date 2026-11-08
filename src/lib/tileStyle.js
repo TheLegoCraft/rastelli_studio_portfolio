@@ -1,4 +1,4 @@
-// Shared by the /work tiles and the home page wheel so the two stay matched.
+// Styles for the /work tiles.
 // The tile title's text style is the .tile-title class in globals.css.
 
 export const TILE_RADIUS = '1.75%';

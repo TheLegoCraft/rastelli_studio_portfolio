@@ -134,8 +134,8 @@ h6 {
   padding: 6px 14px;
   border: none;
   border-radius: 6px;
-  background-color: #FDD6CD;
-  color: #330D03;
+  background-color: #CDF3FD;
+  color: #032933;
   font-family: inherit;
   font-size: 1rem;
   font-weight: 700;
@@ -145,11 +145,10 @@ h6 {
 }
 
 .filter-tag--active {
-  background-color: var(--primary-color);
-  box-shadow: 0 0 10px rgba(255, 74, 28, 0.5);
+  background-color: var(--secondary-color);
 }
 
-/* Title on the /work tiles and home wheel tiles */
+/* Title on the /work tiles */
 .tile-title {
   color: #ffffff;
   font-size: clamp(0.95rem, 1.35vw, 1.22rem);
@@ -213,9 +212,90 @@ h6 {
   }
 }
 
-/* Home wheel panel: dims the image and shows a label. Only on devices that can really hover,
+/* Sections below the hero: About me, Highlights, Contact */
+.home-page-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 5% 100px;
+}
+
+.home-page-section {
+  margin-bottom: 4.5rem;
+  /* Clears the fixed header when jumped to from the menu or a project's back link */
+  scroll-margin-top: 6rem;
+}
+
+.home-about {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.home-about__photo {
+  position: relative;
+  flex: 0 0 220px;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+@media (max-width: 620px) {
+  .home-about {
+    flex-direction: column;
+  }
+
+  .home-about__photo {
+    flex-basis: auto;
+    width: min(220px, 100%);
+  }
+}
+
+/* Highlights: square cards, two per row, one per row on phones */
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 700px) {
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.highlight-card {
+  position: relative;
+  display: block;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #0a0a0a;
+  scroll-margin-top: 6rem;
+}
+
+/* Text on a dark band along the bottom of the image */
+.highlight-card__band {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.8rem 1.25rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.highlight-card__title {
+  color: var(--primary-color);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+/* Dims the image and shows a label. Only on devices that can really hover,
    so a tap doesn't leave it stuck on */
-.stop-panel-hint {
+.highlight-card__hint {
   position: absolute;
   inset: 0;
   display: flex;
@@ -231,12 +311,12 @@ h6 {
   transition: opacity 0.25s ease;
 }
 
-a:focus-visible>.stop-panel-hint {
+.highlight-card:focus-visible .highlight-card__hint {
   opacity: 1;
 }
 
 @media (hover: hover) {
-  .stop-panel:hover .stop-panel-hint {
+  .highlight-card:hover .highlight-card__hint {
     opacity: 1;
   }
 }
