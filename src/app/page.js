@@ -39,7 +39,7 @@ export default function Home() {
                 A designer for the future.
               </p>
               <p style={{ margin: '0 0 0.6em' }}>
-                Over the last few years, I've been studying and developing my skills as a designer. Having worked over a very wide variety of projects, from physical products to UI/UX designs, I'm now looking for a job that will challenge me and allow me to grow.
+                Over the last few years, I&apos;ve been studying and developing my skills as a designer. Having worked over a very wide variety of projects, from physical products to UI/UX designs, I&apos;m now looking for a job that will challenge me and allow me to grow.
               </p>
               <p style={{ margin: '0 0 0.6em' }}>
                 My creativity is fuelled by a love for design, cooking, art and sport. Keep scrolling for some of my favourite projects and how to get in touch. Enjoy!

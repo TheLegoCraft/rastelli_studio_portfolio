@@ -80,9 +80,13 @@ export function ProjectPhotobooth({ rows, fallbackAlt }) {
                     ...(item.aspectRatio ? { aspectRatio: item.aspectRatio } : {}),
                   }}
                 >
+                  {/* A plain <img> on purpose: the gallery sizes to each image's natural height, which next/image can't do
+                      without known dimensions, and the static export has no image optimiser for it to use anyway */}
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={withBasePath(src)}
                     alt={item.alt || fallbackAlt}
+                    loading="lazy"
                     style={{
                       width: '100%',
                       height: '100%',
