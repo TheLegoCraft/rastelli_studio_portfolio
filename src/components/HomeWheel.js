@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { TILE_BAR_COLOR, TILE_BRIGHTNESS, TILE_RADIUS, tileBarStyle, tileTitleStyle } from '@/lib/tileStyle';
+import { TILE_BAR_COLOR, TILE_BRIGHTNESS, TILE_RADIUS, tileBarStyle } from '@/lib/tileStyle';
 
 const TILE = 'var(--wheel-tile)';
 const WHEEL = `calc(${TILE} / 0.23)`;
@@ -281,7 +281,7 @@ function WheelTile({ stop, angle, isActive, onSelect }) {
         }}
       />
       <div style={tileBarStyle}>
-        <span style={tileTitleStyle}>{stop.title}</span>
+        <span className="tile-title">{stop.title}</span>
       </div>
     </Link>
   );

@@ -9,12 +9,11 @@ export default function ContactPage() {
 
       {CONTACT_METHODS.map(({ label, value, href, external }) => (
         <section key={label} style={{ marginBottom: '2rem' }}>
-          <h2 className="title-small text-primary" style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.4)', paddingBottom: '0.5rem', marginBottom: '1rem' }}>{label}</h2>
+          <h2 className="section-heading">{label}</h2>
           <a
             href={href}
             {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-            className="body-main"
-            style={{ color: 'var(--secondary-color)', textDecoration: 'underline', wordBreak: 'break-word' }}
+            className="body-main text-link"
           >
             {value}
           </a>

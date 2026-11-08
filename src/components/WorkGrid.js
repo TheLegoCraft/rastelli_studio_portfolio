@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { TILE_BRIGHTNESS, TILE_RADIUS, tileBarStyle, tileTitleStyle } from '@/lib/tileStyle';
+import { TILE_BRIGHTNESS, TILE_RADIUS, tileBarStyle } from '@/lib/tileStyle';
 
 // Each project's filter categories come from projectsContent, via the page
 const projectsData = [
@@ -182,23 +182,25 @@ function ProjectCard({ project }) {
 
       {/* Project Title: white text on a dark bar, fixed to the bottom edge */}
       <div style={tileBarStyle}>
-        <h3 style={tileTitleStyle}>{project.title}</h3>
+        <h3 className="tile-title">{project.title}</h3>
       </div>
     </Link>
   );
 }
 
 export default function WorkGrid({ categoriesBySlug }) {
-  const [activeFilter, setActiveFilter] = useState(null);
+  const [activeFilters, setActiveFilters] = useState([]);
 
   const toggleFilter = (category) => {
-    setActiveFilter(prev => (prev === category ? null : category));
+    setActiveFilters(prev =>
+      prev.includes(category) ? prev.filter(c => c !== category) : [...prev, category]
+    );
   };
 
-  // Filter projects by selected category (or show all if none selected)
-  const filteredProjects = activeFilter
-    ? projectsData.filter(p => categoriesBySlug[p.slug].includes(activeFilter))
-    : projectsData;
+  // Show only projects that have every selected category (all projects if none selected)
+  const filteredProjects = projectsData.filter(p =>
+    activeFilters.every(cat => categoriesBySlug[p.slug].includes(cat))
+  );
 
   // Group by year
   const groupedProjects = filteredProjects.reduce((acc, project) => {
@@ -222,26 +224,12 @@ export default function WorkGrid({ categoriesBySlug }) {
         }}
       >
         {filterCategories.map(cat => {
-          const isActive = activeFilter === cat;
+          const isActive = activeFilters.includes(cat);
           return (
             <button
               key={cat}
               onClick={() => toggleFilter(cat)}
-              style={{
-                padding: '5px 12px',
-                backgroundColor: isActive ? 'var(--primary-color)' : '#FFDACD',
-                color: '#260C03',
-                border: 'none',
-                borderRadius: '1px',
-                cursor: 'pointer',
-                fontFamily: 'var(--font-jetbrains-mono), monospace',
-                fontSize: '1rem',
-                fontWeight: 700,
-                letterSpacing: '0.03em',
-                textTransform: 'uppercase',
-                transition: 'all 0.2s ease',
-                boxShadow: isActive ? '0 0 10px rgba(255, 74, 28, 0.5)' : 'none',
-              }}
+              className={isActive ? 'filter-tag filter-tag--active' : 'filter-tag'}
             >
               {cat}
             </button>
@@ -251,34 +239,14 @@ export default function WorkGrid({ categoriesBySlug }) {
 
       {/* Projects grouped by Year */}
       {years.length === 0 ? (
-        <div style={{ padding: '4rem 0', color: 'var(--grey-400)', fontFamily: 'var(--font-jetbrains-mono), monospace' }}>
-          No projects found in this category. Click the active filter button to view all.
-        </div>
+        <p className="body-main text-grey" style={{ padding: '4rem 0' }}>
+          No projects match all the selected filters. Deselect a filter to see more.
+        </p>
       ) : (
         years.map(year => {
           return (
             <section key={year} style={{ marginBottom: '3.5rem' }}>
-              {/* Year Heading & Divider */}
-              <div
-                style={{
-                  marginBottom: '1.25rem',
-                  borderBottom: '1px solid #FDD6CD',
-                  paddingBottom: '0.4rem',
-                }}
-              >
-                <h2
-                  style={{
-                    color: 'var(--primary-color)',
-                    fontFamily: 'var(--font-jetbrains-mono), monospace',
-                    fontSize: '2.5rem',
-                    fontWeight: 700,
-                    letterSpacing: '0.03em',
-                    margin: 0,
-                  }}
-                >
-                  {year}
-                </h2>
-              </div>
+              <h2 className="section-heading">{year}</h2>
 
               {/* 3-Column Square Grid */}
               <div

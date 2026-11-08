@@ -10,7 +10,7 @@ export default function Home() {
             DESIGN BUILD TEST
           </h1>
 
-          <div class="home-page-hero__subtitle">
+          <div className="home-page-hero__subtitle">
             <span>Francesco Rastelli</span>
             <span>2026 Portfolio</span>
           </div>

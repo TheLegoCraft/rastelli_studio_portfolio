@@ -57,7 +57,7 @@ h6 {
   padding: 100px 5%;
 }
 
-/* Base typography utilities */
+/* Typography: every text style on the site comes from these classes, so pages stay matched */
 
 .text-primary {
   color: var(--primary-color);
@@ -71,28 +71,93 @@ h6 {
   color: var(--grey-400);
 }
 
+/* Page title: one per page */
 .title-large {
   font-size: clamp(2.4rem, 5vw, 4rem);
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: 0.01em;
   text-transform: uppercase;
+  word-break: break-word;
   margin-bottom: 2rem;
 }
 
-.title-small {
-  font-size: 2.5rem;
-  line-height: 1.2;
-  text-transform: uppercase;
+/* Section heading with an underline: "Education", "Project Brief", years on /work */
+.section-heading {
+  color: var(--primary-color);
+  font-size: clamp(1.5rem, 2.5vw, 1.9rem);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid #FDD6CD;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.25rem;
 }
 
+/* Subheading inside a section: CV entries, project dates */
 .heading-2 {
   font-size: 1.5rem;
+  opacity: 0.9;
 }
 
 .body-main {
   font-size: 1rem;
   line-height: 1.5;
+}
+
+/* Small print: back buttons and other quiet labels */
+.text-small {
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
+/* Inline link inside running text */
+.text-link {
+  color: var(--secondary-color);
+  text-decoration: underline;
+  word-break: break-word;
+}
+
+/* Tag chips on individual project pages (/projects/[slug]) */
+.project-tag {
+  padding: 6px 14px;
+  border-radius: 6px;
+  color: var(--grey-400);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid var(--grey-400);
+}
+
+/* Filter tags on the /work page */
+.filter-tag {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #FDD6CD;
+  color: #330D03;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.filter-tag--active {
+  background-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(255, 74, 28, 0.5);
+}
+
+/* Title on the /work tiles and home wheel tiles */
+.tile-title {
+  color: #ffffff;
+  font-size: clamp(0.95rem, 1.35vw, 1.22rem);
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  margin: 0;
+  word-break: break-word;
 }
 
 /* Links in the Documentation sections */

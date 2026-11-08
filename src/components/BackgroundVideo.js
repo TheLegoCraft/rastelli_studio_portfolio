@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export default function BackgroundVideo() {
   return (
     <div
@@ -14,13 +12,16 @@ export default function BackgroundVideo() {
         pointerEvents: 'none',
       }}
     >
-      {/* Loops forever via the GIF's own loop setting; unoptimized keeps it animated */}
-      <Image
-        src="/BackgroundVideoPortfolioInversed.gif"
-        alt=""
-        fill
-        unoptimized
-        style={{ objectFit: 'cover' }}
+      {/* muted + playsInline are required for browsers to allow autoplay */}
+      <video
+        src="/BackgroundVideoPortfolioInversed.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="auto"
+        aria-hidden="true"
+        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
       />
     </div>
   );

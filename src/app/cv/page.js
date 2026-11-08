@@ -15,7 +15,7 @@ export default function CVPage() {
               <a
                 href={href}
                 {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                style={{ color: 'var(--secondary-color)', textDecoration: 'underline', wordBreak: 'break-word' }}
+                className="text-link"
               >
                 {value}
               </a>
@@ -26,34 +26,34 @@ export default function CVPage() {
 
       {/* Education */}
       <section style={{ marginBottom: '3rem' }}>
-        <h2 className="title-small text-primary" style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.4)', paddingBottom: '0.5rem', marginBottom: '1.5rem' }}>Education</h2>
+        <h2 className="section-heading">Education</h2>
 
         <div style={{ marginBottom: '1.5rem' }}>
           <p className="heading-2" style={{ marginBottom: '0.5rem' }}>
-            <span className="text-primary">MEng in Design Engineering</span >
+            <span className="text-primary">Imperial College London</span >
           </p>
-          <p className="body-main" style={{ marginBottom: '1rem' }}>Imperial College London, Upper Second-Class Honours (2:1)</p>
+          <p className="body-main" style={{ marginBottom: '1rem' }}>MEng in Design Engineering - Upper Second-Class Honours (2:1)</p>
         </div>
 
         <div style={{ marginBottom: '1.5rem' }}>
           <p className="heading-2" style={{ marginBottom: '0.5rem' }}>
-            <span className="text-primary">A-Levels @ Cardinal Vaughan Memorial School</span >
+            <span className="text-primary">Cardinal Vaughan Memorial School</span >
           </p>
-          <p className="body-main" style={{ marginBottom: '1rem' }}>Product design (A*), Mathematics (A*), Physics (A)</p>
+          <p className="body-main" style={{ marginBottom: '1rem' }}>A-Levels - Product design (A*), Mathematics (A*), Physics (A)</p>
         </div>
 
         <div style={{ marginBottom: '1.5rem' }}>
           <p className="heading-2" style={{ marginBottom: '0.5rem' }}>
-            <span className="text-primary">GCSE @ Cardinal Vaughan Memorial School</span >
+            <span className="text-primary">Cardinal Vaughan Memorial School</span >
           </p>
-          <p className="body-main" style={{ marginBottom: '1rem' }}>9,9,9,8,8,8,8,7,7,7,7</p>
+          <p className="body-main" style={{ marginBottom: '1rem' }}>GCSE - 9,9,9,8,8,8,8,7,7,7,7</p>
         </div>
 
       </section>
 
       {/* Experience */}
       <section style={{ marginBottom: '3rem' }}>
-        <h2 className="title-small text-primary" style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.4)', paddingBottom: '0.5rem', marginBottom: '1.5rem' }}>Experience</h2>
+        <h2 className="section-heading">Experience</h2>
 
         <ExperienceItem
           role="UX Researcher" company="TeamViewer, Germany" date="Apr 2025 to Sep 2025"
@@ -66,17 +66,16 @@ export default function CVPage() {
         />
 
         <ExperienceItem
-          role="Treasurer and Coach" company="ICSM Water Polo, London" date="Sep 2025 to Aug 2026"
+          role="Pizza Chef and Bartender" company="Oi Vita, London" date="Jun 2024 to Dec 2024"
           bullets={[
-            "Managed club funds and payments for matches, referees, events and transport.",
-            "Won the London Cup and LUSL League, and became the first team to win all 3 Varsity matches."
+            "Made pizzas and tended bar in a fast-paced restaurant serving up to 400 pizzas a night."
           ]}
         />
 
         <ExperienceItem
-          role="Pizza Chef and Bartender" company="Oi Vita, London" date="Jun 2024 to Dec 2024"
+          role="Barback" company="O'Ver, London" date="Jun 2023 to Sep 2023"
           bullets={[
-            "Made pizzas and tended bar in a fast-paced restaurant serving up to 400 pizzas a night."
+            "Managed inventory, prepared supplies, served customers and cleaned."
           ]}
         />
 
@@ -90,25 +89,26 @@ export default function CVPage() {
         />
 
         <ExperienceItem
-          role="Social & Tour Secretary" company="ICSM Water Polo, London" date="Sep 2023 to Aug 2025"
-          bullets={[
-            "Organised matches, travel and accommodation for 50 people in Brighton and Barcelona.",
-            "Ran social events for up to 45 people, managing VAT-compliant payments and health and safety."
-          ]}
-        />
-
-        <ExperienceItem
-          role="Barback" company="O'Ver, London" date="Jun 2023 to Sep 2023"
-          bullets={[
-            "Managed inventory, prepared supplies, served customers and cleaned."
-          ]}
-        />
-
-        <ExperienceItem
           role="Student Workshop Manager" company="Cardinal Vaughan Memorial School, London" date="Sep 2020 to Aug 2022"
           bullets={[
             "Set up and maintained machines, and trained students to use them safely.",
             "Learnt to combine manufacturing processes, including FDM and SLA 3D printing and laser cutting, for high-quality results."
+          ]}
+        />
+
+        <ExperienceItem
+          role="Treasurer and Coach" company="ICSM Water Polo, London" date="Sep 2025 to Aug 2026"
+          bullets={[
+            "Managed club funds and payments for matches, referees, events and transport.",
+            "Won the London Cup and LUSL League, and became the first team to win all 3 Varsity matches."
+          ]}
+        />
+
+        <ExperienceItem
+          role="Social & Tour Secretary" company="ICSM Water Polo, London" date="Sep 2023 to Aug 2025"
+          bullets={[
+            "Organised matches, travel and accommodation for 50 people in Brighton and Barcelona.",
+            "Ran social events for up to 45 people, managing VAT-compliant payments and health and safety."
           ]}
         />
 
@@ -122,7 +122,7 @@ export default function CVPage() {
 
       {/* Software */}
       <section style={{ marginBottom: '4rem' }}>
-        <h2 className="title-small text-primary" style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.4)', paddingBottom: '0.5rem', marginBottom: '1.5rem' }}>Software</h2>
+        <h2 className="section-heading">Software</h2>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '1.5rem 1rem', alignItems: 'baseline' }}>
           <p className="heading-2 text-primary" style={{ margin: 0 }}>CAD</p>
@@ -145,7 +145,7 @@ export default function CVPage() {
 
       {/* Documentation */}
       <section style={{ marginBottom: '3rem' }}>
-        <h2 className="title-small text-primary" style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.4)', paddingBottom: '0.5rem', marginBottom: '1.5rem' }}>Download my CV (PDF)</h2>
+        <h2 className="section-heading">Download my CV (PDF)</h2>
         <a
           href="/CV_professional.pdf"
           target="_blank"

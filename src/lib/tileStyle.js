@@ -1,4 +1,5 @@
 // Shared by the /work tiles and the home page wheel so the two stay matched.
+// The tile title's text style is the .tile-title class in globals.css.
 
 export const TILE_RADIUS = '1.75%';
 export const TILE_BRIGHTNESS = { rest: 0.5, active: 1.1 };
@@ -17,15 +18,4 @@ export const tileBarStyle = {
   alignItems: 'center',
   justifyContent: 'center',
   pointerEvents: 'none',
-};
-
-export const tileTitleStyle = {
-  color: '#ffffff',
-  fontFamily: 'var(--font-jetbrains-mono), monospace',
-  fontSize: 'clamp(0.95rem, 1.35vw, 1.22rem)',
-  fontWeight: 500,
-  lineHeight: 1.35,
-  letterSpacing: '0.02em',
-  margin: 0,
-  wordBreak: 'break-word',
 };

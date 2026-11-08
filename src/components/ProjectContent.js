@@ -7,23 +7,13 @@ function youtubeId(src) {
 
 export function ProjectBrief({ paragraphs }) {
   return paragraphs.map((paragraph, idx) => (
-    <p
-      key={idx}
-      style={{
-        fontFamily: 'var(--font-jetbrains-mono), monospace',
-        marginBottom: '1.4rem',
-        lineHeight: '1.65',
-        color: '#E5E5E5',
-        fontSize: '1rem',
-        letterSpacing: '0.01em',
-      }}
-    >
+    <p key={idx} className="body-main" style={{ marginBottom: '1.4rem' }}>
       {paragraph.href ? (
         <a
           href={paragraph.href}
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: 'var(--secondary-color)', textDecoration: 'underline' }}
+          className="text-link"
         >
           {paragraph.label}
         </a>
