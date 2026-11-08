@@ -161,12 +161,14 @@ h6 {
 
 /* Links in the Documentation sections */
 .doc-link {
-  transition: color 0.2s ease;
+  color: var(--secondary-color);
+  text-decoration: underline;
+  transition: opacity 0.2s ease;
 }
 
+/* Already blue and underlined, so hovering just fades it slightly to show it's clickable */
 .doc-link:hover {
-  color: var(--secondary-color) !important;
-  text-decoration: underline !important;
+  opacity: 0.75;
 }
 
 /* HOMEPAGE */
@@ -341,5 +343,39 @@ h6 {
 
   .site-header:not(.menu-open) {
     background-color: var(--bg-color);
+  }
+}
+/* Header logo: on page load and on hover the letters erase and redraw stroke by stroke inside the frame */
+.logo {
+  display: block;
+  height: 3rem;
+  width: auto;
+  /* At 3rem the logo is ~30rem wide; leave room for the menu button on phones */
+  max-width: calc(100vw - 8rem);
+}
+
+/* Gap of 2 so a fully hidden stroke never shows the round cap of the next dash */
+.logo__stroke {
+  stroke-dasharray: 1 2;
+}
+
+/* Page load: same redraw, a little slower and after a short pause */
+.logo__intro {
+  animation: logo-draw 0.6s cubic-bezier(0.65, 0, 0.35, 1) calc(var(--d) + 0.3s) both;
+}
+
+.site-logo:is(:hover, :focus-visible) .logo__stroke {
+  animation: logo-draw 0.45s cubic-bezier(0.65, 0, 0.35, 1) var(--d) both;
+}
+
+@keyframes logo-draw {
+  from { stroke-dashoffset: 1.05; }
+  to { stroke-dashoffset: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo__intro,
+  .site-logo .logo__stroke {
+    animation: none !important;
   }
 }

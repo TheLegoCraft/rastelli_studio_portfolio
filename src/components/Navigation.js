@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Logo from './Logo';
 
 const NAV_ITEMS = [
   { text: 'ABOUT (00)', link: '/#about', bgColor: '#ACE8FA' },
@@ -39,17 +40,13 @@ export default function Navigation() {
         pointerEvents: 'none', // Allow clicking through empty space
       }}>
         {/* Home Logo */}
-        <Link href="/" onClick={() => setIsOpen(false)} style={{
-          textDecoration: 'none',
+        <Link href="/" className="site-logo" aria-label="rastelli.studio home" onClick={() => setIsOpen(false)} style={{
           color: 'var(--text-color)',
-          fontWeight: 'bold',
-          fontSize: '1.5rem',
-          letterSpacing: '0.05em',
           transition: 'color 0.3s, opacity 0.3s',
           opacity: isOpen ? 0 : 1, // The menu covers the page, logo included
           pointerEvents: isOpen ? 'none' : 'auto', // Re-enable pointer events for the link
         }}>
-          rastelli.studio
+          <Logo />
         </Link>
 
         {/* Hamburger Menu Button */}
