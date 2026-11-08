@@ -1,4 +1,5 @@
 import { CONTACT_METHODS } from '@/lib/contactMethods';
+import { withBasePath } from '@/lib/basePath';
 
 export default function CVPage() {
   return (
@@ -147,7 +148,7 @@ export default function CVPage() {
       <section style={{ marginBottom: '3rem' }}>
         <h2 className="section-heading">Download my CV (PDF)</h2>
         <a
-          href="/CV_professional.pdf"
+          href={withBasePath("/CV_professional.pdf")}
           target="_blank"
           rel="noopener noreferrer"
           className="doc-link body-main"

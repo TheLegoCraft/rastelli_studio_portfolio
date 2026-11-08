@@ -1,3 +1,5 @@
+import { withBasePath } from '@/lib/basePath';
+
 export default function BackgroundVideo() {
   return (
     <div
@@ -14,7 +16,7 @@ export default function BackgroundVideo() {
     >
       {/* muted + playsInline are required for browsers to allow autoplay */}
       <video
-        src="/BackgroundVideoPortfolioInversed.mp4"
+        src={withBasePath("/BackgroundVideoPortfolioInversed.mp4")}
         autoPlay
         loop
         muted

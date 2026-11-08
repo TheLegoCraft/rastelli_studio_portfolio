@@ -1,3 +1,5 @@
+import { withBasePath } from '@/lib/basePath';
+
 // Shared by the project pages and the Hobbies page.
 
 // Accepts youtu.be, youtube.com/watch?v= and youtube.com/shorts/ links
@@ -79,7 +81,7 @@ export function ProjectPhotobooth({ rows, fallbackAlt }) {
                   }}
                 >
                   <img
-                    src={src}
+                    src={withBasePath(src)}
                     alt={item.alt || fallbackAlt}
                     style={{
                       width: '100%',

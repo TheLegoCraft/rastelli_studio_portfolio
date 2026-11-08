@@ -1,27 +1,27 @@
-import { projectsContent } from '@/lib/projectsContent';
+import { Suspense } from 'react';
 import Link from 'next/link';
+import { redirect } from 'next/navigation';
+import { projectsContent } from '@/lib/projectsContent';
+import { withBasePath } from '@/lib/basePath';
 import { ProjectBrief, ProjectPhotobooth } from '@/components/ProjectContent';
+import ProjectBackLink from '@/components/ProjectBackLink';
 
-export default async function ProjectPage({ params, searchParams }) {
+// Old project pages whose content now lives on the Hobbies page
+const MOVED_TO_HOBBIES = ['cycling-iceland-and-trans-european', 'photography-and-hobbies'];
+
+// Every page is built ahead of time; any other slug gets the 404 page
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return [...Object.keys(projectsContent), ...MOVED_TO_HOBBIES].map(slug => ({ slug }));
+}
+
+export default async function ProjectPage({ params }) {
   const { slug } = await params;
-  const { from } = await searchParams;
-  const normalizedSlug = slug?.toLowerCase();
-  const project = projectsContent[slug] || projectsContent[normalizedSlug];
 
-  if (!project) {
-    return (
-      <main className="main-page-area" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
-        <h1 className="title-large text-primary">Project Not Found</h1>
-        <p className="body-main text-grey" style={{ marginBottom: '2rem' }}>
-          Sorry, the project &ldquo;{slug}&rdquo; doesn&apos;t have a dedicated page yet.
-        </p>
-        <Link href="/work" className="body-main text-link">Return to Work</Link>
-      </main>
-    );
-  }
+  if (MOVED_TO_HOBBIES.includes(slug)) redirect('/hobbies');
 
-  // The home page Highlights mark their links, so the button can go back to the card the visitor came from
-  const fromHighlights = from === 'highlights';
+  const project = projectsContent[slug];
 
   return (
     <main
@@ -36,12 +36,9 @@ export default async function ProjectPage({ params, searchParams }) {
     >
       {/* Back Button */}
       <div style={{ marginBottom: '2.5rem' }}>
-        <Link
-          href={fromHighlights ? `/#highlight-${normalizedSlug}` : '/work'}
-          className="text-small text-grey"
-        >
-          {fromHighlights ? '← BACK TO THE HIGHLIGHTS' : '← BACK TO WORK'}
-        </Link>
+        <Suspense fallback={<Link href="/work" className="text-small text-grey">← BACK TO WORK</Link>}>
+          <ProjectBackLink slug={slug} />
+        </Suspense>
       </div>
 
       {/* Title & Date */}
@@ -80,7 +77,7 @@ export default async function ProjectPage({ params, searchParams }) {
             {project.documentation.map((doc, idx) => (
               <a
                 key={idx}
-                href={doc.link}
+                href={withBasePath(doc.link)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="body-main doc-link"

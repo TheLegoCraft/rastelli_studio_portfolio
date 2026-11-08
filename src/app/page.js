@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { highlights } from "@/lib/highlights";
 import ContactList from "@/components/ContactList";
+import { withBasePath } from '@/lib/basePath';
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
           <h2 className="section-heading">About me</h2>
           <div className="home-about">
             <div className="home-about__photo">
-              <Image src="/francesco.png" alt="Francesco Rastelli" fill sizes="220px" style={{ objectFit: 'cover' }} />
+              <Image src={withBasePath("/francesco.png")} alt="Francesco Rastelli" fill sizes="220px" style={{ objectFit: 'cover' }} />
             </div>
             <div className="body-main">
               <p style={{ margin: '0 0 0.6em' }}>
@@ -70,7 +71,7 @@ function HighlightCard({ item }) {
   return (
     <Link href={item.href} id={item.anchor} className="highlight-card">
       <Image
-        src={item.image}
+        src={withBasePath(item.image)}
         alt=""
         fill
         sizes="(max-width: 1000px) 90vw, 900px"

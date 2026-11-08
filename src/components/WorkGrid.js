@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { TILE_BRIGHTNESS, TILE_RADIUS, tileBarStyle } from '@/lib/tileStyle';
+import { withBasePath } from '@/lib/basePath';
 
 // Each project's filter categories come from projectsContent, via the page
 const projectsData = [
@@ -171,7 +172,7 @@ function ProjectCard({ project }) {
         style={{
           position: 'absolute',
           inset: 0,
-          backgroundImage: project.image ? `url(${project.image})` : 'none',
+          backgroundImage: project.image ? `url("${withBasePath(project.image)}")` : 'none',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           zIndex: 1,
