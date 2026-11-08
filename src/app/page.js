@@ -55,6 +55,11 @@ export default function Home() {
               <HighlightCard key={item.title} item={item} />
             ))}
           </div>
+          <div className="highlights-more">
+            <Link href="/work" className="button-primary">
+              SEE ALL MY WORK →
+            </Link>
+          </div>
         </section>
 
         <section id="contact" className="home-page-section">

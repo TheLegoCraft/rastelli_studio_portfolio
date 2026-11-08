@@ -263,7 +263,32 @@ h6 {
 .highlights-grid {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 4rem;
+  /* Collapses with the heading's 1.25rem margin, so the gap below the line is 2.5rem in total */
+  margin-top: 2.5rem;
+}
+
+/* Centred link to /work below the Highlights cards */
+.highlights-more {
+  display: flex;
+  justify-content: center;
+  margin: 8rem 0 6rem;
+}
+
+.button-primary {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  background-color: var(--secondary-color);
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  transition: opacity 0.2s ease;
+}
+
+.button-primary:hover {
+  opacity: 0.85;
 }
 
 .highlight-card {
@@ -345,6 +370,7 @@ h6 {
     background-color: var(--bg-color);
   }
 }
+
 /* Header logo: on page load and on hover the letters erase and redraw stroke by stroke inside the frame */
 .logo {
   display: block;
@@ -369,11 +395,17 @@ h6 {
 }
 
 @keyframes logo-draw {
-  from { stroke-dashoffset: 1.05; }
-  to { stroke-dashoffset: 0; }
+  from {
+    stroke-dashoffset: 1.05;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .logo__intro,
   .site-logo .logo__stroke {
     animation: none !important;
@@ -444,8 +476,13 @@ h6 {
 }
 
 @keyframes lightbox-fade {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* Stop the page scrolling behind an open lightbox */

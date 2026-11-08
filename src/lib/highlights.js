@@ -1,4 +1,4 @@
-// The four cards in the Highlights grid on the home page. Each body is the card's own text,
+// The project cards in the Highlights grid on the home page. Each body is the card's own text,
 // so editing it here does not change the project pages.
 
 function projectHighlight(title, slug, overrides = {}) {
@@ -28,12 +28,4 @@ export const highlights = [
     imagePosition: 'top',
     body: "At TeamViewer in Germany, I was one of four UX Researchers, helping designers and product managers find answers through interviews and data. It was a big step forward for my research skills.",
   }),
-  {
-    title: 'See all my work',
-    href: '/work',
-    image: '/project_icons/work.png',
-    imagePosition: 'top',
-    hoverLabel: 'Go to Work →',
-    body: 'Every project, from CAD and prototyping to programming and data analysis.',
-  },
 ];
