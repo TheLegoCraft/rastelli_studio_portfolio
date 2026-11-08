@@ -1,26 +1,19 @@
 import { Suspense } from 'react';
 import Link from 'next/link';
-import { redirect } from 'next/navigation';
 import { projectsContent } from '@/lib/projectsContent';
 import { withBasePath } from '@/lib/basePath';
 import { ProjectBrief, ProjectPhotobooth } from '@/components/ProjectContent';
 import ProjectBackLink from '@/components/ProjectBackLink';
 
-// Old project pages whose content now lives on the Hobbies page
-const MOVED_TO_HOBBIES = ['cycling-iceland-and-trans-european', 'photography-and-hobbies'];
-
 // Every page is built ahead of time; any other slug gets the 404 page
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return [...Object.keys(projectsContent), ...MOVED_TO_HOBBIES].map(slug => ({ slug }));
+  return Object.keys(projectsContent).map(slug => ({ slug }));
 }
 
 export default async function ProjectPage({ params }) {
   const { slug } = await params;
-
-  if (MOVED_TO_HOBBIES.includes(slug)) redirect('/hobbies');
-
   const project = projectsContent[slug];
 
   return (
