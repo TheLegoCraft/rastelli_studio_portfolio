@@ -225,20 +225,26 @@ h6 {
   scroll-margin-top: 6rem;
 }
 
+/* The photo stretches to the height of the text beside it, cropping to fit */
 .home-about {
   display: flex;
   gap: 2rem;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 .home-about__photo {
   position: relative;
   flex: 0 0 220px;
-  aspect-ratio: 1;
   border-radius: 8px;
   overflow: hidden;
 }
 
+/* So the text block ends at its last line, level with the bottom of the photo */
+.home-about p:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Stacked on phones, where the photo goes back to a square above the text */
 @media (max-width: 620px) {
   .home-about {
     flex-direction: column;
@@ -247,30 +253,32 @@ h6 {
   .home-about__photo {
     flex-basis: auto;
     width: min(220px, 100%);
+    aspect-ratio: 1;
   }
 }
 
-/* Highlights: square cards, two per row, one per row on phones */
+/* Highlights: one full-width card per row, stacked */
 .highlights-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem;
-}
-
-@media (max-width: 700px) {
-  .highlights-grid {
-    grid-template-columns: 1fr;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
 .highlight-card {
   position: relative;
   display: block;
-  aspect-ratio: 1;
+  aspect-ratio: 16 / 9;
   border-radius: 8px;
   overflow: hidden;
   background-color: #0a0a0a;
   scroll-margin-top: 6rem;
+}
+
+/* On phones the text band would cover most of a wide card, so they go back to square */
+@media (max-width: 700px) {
+  .highlight-card {
+    aspect-ratio: 1;
+  }
 }
 
 /* Text on a dark band along the bottom of the image */

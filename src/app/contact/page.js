@@ -1,4 +1,4 @@
-import { CONTACT_METHODS } from '@/lib/contactMethods';
+import ContactList from '@/components/ContactList';
 
 export default function ContactPage() {
   return (
@@ -7,18 +7,7 @@ export default function ContactPage() {
 
       <p className="body-main" style={{ marginBottom: '3rem' }}>The best way to reach me is through email or phone, although LinkedIn messages are also welcome.</p>
 
-      {CONTACT_METHODS.map(({ label, value, href, external }) => (
-        <section key={label} style={{ marginBottom: '2rem' }}>
-          <h2 className="section-heading">{label}</h2>
-          <a
-            href={href}
-            {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-            className="body-main text-link"
-          >
-            {value}
-          </a>
-        </section>
-      ))}
+      <ContactList headingLevel={2} />
     </main>
   );
 }

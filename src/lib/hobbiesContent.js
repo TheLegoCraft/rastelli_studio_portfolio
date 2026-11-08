@@ -44,7 +44,7 @@ export const hobbiesSections = [
       [
         { src: `${PERSONAL}/image_12.jpeg`, alt: 'Island church on Lake Bled', span: '1fr', aspectRatio: '3/4' },
         { src: `${PERSONAL}/image_13.JPG`, alt: 'Repairing a broken spoke at the roadside', span: '1fr', aspectRatio: '3/4' },
-        { src: `${PERSONAL}/image_14.jpeg`, alt: 'Cycle path through a cornfield', span: '1fr', aspectRatio: '3/4' },
+        { src: `${PERSONAL}/image_14.JPG`, alt: 'Cycle path through a cornfield', span: '1fr', aspectRatio: '3/4' },
       ],
       [
         { src: `${PERSONAL}/image_16.jpeg`, alt: 'Forested valley under dramatic clouds', span: '1fr', aspectRatio: '4/3' },

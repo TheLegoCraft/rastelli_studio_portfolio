@@ -18,15 +18,20 @@ export const highlights = [
     body: "Light through the window was ruining my team's sleep, and 71% of people we surveyed felt the same. So we pitched a window film that blocks up to 97% of light, then set about bringing it to life.",
   }),
   projectHighlight('Apollo Drones', 'apollo-drones', {
+    // Full-size render: the 429px project icon looks pixelated on a full-width card
+    image: '/projects/2024_Apollo_Drones/SnowSpotlight.png',
     body: "Apollo Drones aims to help Search and Rescue teams with a critical problem: how do you cover a large area quickly enough to save someone's life?",
   }),
   projectHighlight('TeamViewer', 'teamviewer', {
+    image: '/projects/2025_TeamViewer/TV_Image.jpeg',
+    // Anchored to the top so the faces and the sign stay clear of the text band
+    imagePosition: 'top',
     body: "At TeamViewer in Germany, I was one of four UX Researchers, helping designers and product managers find answers through interviews and data. It was a big step forward for my research skills.",
   }),
   {
     title: 'See all my work',
     href: '/work',
-    image: '/project_icons/work.webp',
+    image: '/project_icons/work.png',
     imagePosition: 'top',
     hoverLabel: 'Go to Work →',
     body: 'Every project, from CAD and prototyping to programming and data analysis.',
