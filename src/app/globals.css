@@ -272,23 +272,25 @@ h6 {
 .highlights-more {
   display: flex;
   justify-content: center;
-  margin: 8rem 0 6rem;
+  margin: 5rem 0 6rem;
 }
 
 .button-primary {
   display: inline-block;
   padding: 0.8rem 1.6rem;
   border-radius: 6px;
-  background-color: var(--secondary-color);
-  color: #000000;
+  /* Matches the inactive /work filter tags, turns bright blue on hover like an active tag */
+  background-color: #CDF3FD;
+  color: #032933;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.05em;
-  transition: opacity 0.2s ease;
+  transition: background-color 0.2s ease;
 }
 
-.button-primary:hover {
-  opacity: 0.85;
+.button-primary:hover,
+.button-primary:focus-visible {
+  background-color: var(--secondary-color);
 }
 
 .highlight-card {
